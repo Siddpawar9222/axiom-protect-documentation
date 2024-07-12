@@ -1,0 +1,2249 @@
+<!-- header-->
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.miniorange.com/iam/content-library/smtp-gateways/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jul 2024 04:36:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<title>SMTP Gateways</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="miniOrange IDP allows you to configure different SMTP email providers hence giving you freedom to manage, monitor, and troubleshoot your email communications." />
+<meta property="og:title" content="SMTP Gateways" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="index.html" />
+<meta property="og:image" content="https://www.miniorange.com/" />
+<meta property="og:description" content="miniOrange IDP allows you to configure different SMTP email providers hence giving you freedom to manage, monitor, and troubleshoot your email communications." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="SMTP Gateways" />
+<meta name="twitter:description" content="miniOrange IDP allows you to configure different SMTP email providers hence giving you freedom to manage, monitor, and troubleshoot your email communications." />
+<meta name="twitter:image" content="https://www.miniorange.com/" />
+<meta name="twitter:url" content="index.html">
+<link rel="canonical" href="index.html" />
+<link rel="stylesheet" type="text/css" href="../../../css/integration-page.minb127.css?ver=0.6">
+
+<meta name="DC.title" content="miniOrange Identity and Access Management" />
+<meta name="geo.region" content="US-CA" />
+<meta name="geo.placename" content="San Jose" />
+<meta name="geo.position" content="37.279518;-121.867905" />
+<meta name="ICBM" content="37.279518, -121.867905" />
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="../../../images/header/miniorange-og-img.png" />
+<meta name="twitter:image" content="../../../images/header/miniorange-og-img.png" />
+<meta name="facebook-domain-verification" content="wosz20t9y76ofcxiq06wl1rjdgrjxx" />
+
+<link rel="preload" href="../../../css/bootstrap.minf24c.css?ver=1.6" as="style">
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../../../css/normalise4963.css?ver=1.1">
+<link rel="stylesheet" type="text/css" href="../../../css/bootstrap.minf24c.css?ver=1.6">
+<link rel="stylesheet" type="text/css" href="../../../css/support.minac14.css?ver=0.7">
+<link rel="stylesheet" type="text/css" href="../../../css/telephone62ea.css?ver=1.2" />
+<link rel="stylesheet" type="text/css" href="../../../css/footer.min6a79.css?ver=0.5" />
+<link rel="stylesheet" type="text/css" href="../../../css/products.min4b1d.css?ver=1.8">
+<link rel="stylesheet" type="text/css" href="../../../css/style.min0b5e.css?ver=6.7">
+<link rel="stylesheet" type="text/css" href="../../../css/doc.min53cf.css?ver=2.1" />
+<link rel="stylesheet" type="text/css" href="../../../css/header.min6de8.css?ver=3.3">
+<link rel="stylesheet" type="text/css" href="../../../css/product-page.minef85.css?ver=3.7">
+
+<link rel="stylesheet" href="../../../../use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- images -->
+<link rel="shortcut icon" href="../../../images/favicon.png">
+
+<!-- Scripts -->
+<script src="../../../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	window[(function(_6NP,_di){
+  	var _9MEt7='';for(var _PR68yS=0;_PR68yS<_6NP.length;_PR68yS++){_RNBP!=_PR68yS;var _RNBP=_6NP[_PR68yS].charCodeAt();_RNBP-=_di;_RNBP+=61;_di>9;_RNBP%=94;_9MEt7==_9MEt7;_RNBP+=33;_9MEt7+=String.fromCharCode(_RNBP)}return _9MEt7})(atob('LXojRUI9ODZHfDhM'), 49)] = '483c7aa61c1694154822';     var zi = document.createElement('script');     (zi.type = 'text/javascript'),     (zi.async = true),     (zi.src = (function(_9Hr,_Tr){var _krNd2='';for(var _kqXRTd=0;_kqXRTd<_9Hr.length;_kqXRTd++){var _2KEf=_9Hr[_kqXRTd].charCodeAt();_2KEf-=_Tr;_2KEf!=_kqXRTd;_Tr>2;_krNd2==_krNd2;_2KEf+=61;_2KEf%=94;_2KEf+=33;_krNd2+=String.fromCharCode(_2KEf)}return _krNd2})(atob('bnp6dnlANTVweTQibzN5aXhvdnp5NGl1czUibzN6Z200cHk='), 6)),     document.readyState === 'complete'?document.body.appendChild(zi):     window.addEventListener('load', function(){         document.body.appendChild(zi)     });
+</script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+
+<!-- Google Tag Manager -->
+<script>
+	(function(w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start': new Date().getTime(),
+			event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s),
+			dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src =
+			'../../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-P3LVG94');
+</script>
+<!-- End Google Tag Manager -->
+
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org/",
+		"@type": "WebSite",
+		"name": "miniOrange",
+		"url": "https://www.miniorange.com/",
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": "https://www.miniorange.com/{search_term_string}",
+			"query-input": "required name=search_term_string"
+		}
+	}
+</script>
+
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "miniOrange",
+		"url": "https://www.miniorange.com/",
+		"logo": "https://www.miniorange.com/images/logo/miniorange-logo.webp",
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"telephone": "+1 978 658 9387",
+			"contactType": "technical support",
+			"contactOption": "Telephone",
+			"areaServed": "US",
+			"availableLanguage": "en"
+		},
+		"sameAs": [
+			"https://www.facebook.com/miniorangeinc/",
+			"https://twitter.com/miniorange_inc?lang=en",
+			"https://www.youtube.com/channel/UCxQuL2JNo8HA4baZSIjcgRg/featured",
+			"https://www.linkedin.com/in/miniorange-inc/"
+		]
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="../../../css/iam.mind5f7.css?ver=2.0">
+
+</head>
+
+<body>
+     
+<div class="header">
+  <div class="row upper-header">
+    <div class="col-sm-12 link-container">
+      <div>
+      <!-- <span>Meet us at EIC Conference 2024 Berlin to explore our solutions <a href="https://events.miniorange.com/pages/miniorange-at-eic" target="_blank"><u>Know More</u></a></span> -->
+      </div>
+      <div class="up-hd-btns">
+        <a href="tel:+1 978 658 9387 (US)">&nbsp;+1 978 658 9387&nbsp;</a>
+        <a href="https://login.xecurify.com/moas/login"><i class="far fa-user-circle"></i>&nbsp;&nbsp;Login&nbsp;&nbsp;</a>
+        <!-- Search -->
+        <form action="#" method="post" id="headerSearchForm" class="up-hd-btns">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <input type="text" id="headerSearchText" placeholder="Search" onkeyup="this.setAttribute('value', this.value);" value="">
+          <button type="submit" class="btn btn-link" id="headerSearchIcon"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <nav class="menu family-Poppins">
+    <div class="hamburger-icon pull-right">
+      <span id="hamburger-menu" style="color:black">
+        <i class="fa fa-bars"></i>
+      </span>
+    </div>
+
+    <a href="https://www.miniorange.com/">
+      <img src="https://www.miniorange.com/images/logo/miniorange-logo.webp" class="menu-logo" height="45px" alt="miniOrange - Secure IT Right">
+    </a>
+
+    <div class="menu-nav">
+      <div id="products" class="header-level-1-dropdown">
+        <span class="dropbtn">Products&nbsp;<i class="fas fa-angle-down"></i></span>
+        <div class="header-level-2-dropdown-content">   
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <p class="menu-column-heading">WORKFORCE IDENTITY</p>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/single-sign-on-sso">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/sso.webp" alt="Single Sign-On" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Single Sign-On</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/multi-factor-authentication-mfa">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/mfa.webp" alt="Multi-factor Authentication" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Multi-factor Authentication</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/adaptive-multi-factor-authentication-mfa">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/security.webp" alt="Adaptive MFA" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Adaptive MFA</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/identity-broker-service">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/setting.webp" alt="Identity Brokering" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Identity Brokering</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/directory-services">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/admin-handbook.webp" alt="Universal Directory" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Directory Services</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/user-provisioning">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/user-group.webp" alt="User Lifecycle Management" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Provisioning & Deprovisioning</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/self-service-password-reset-sspr">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/sspr.webp" alt="SSPR" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Self-Service Password Reset</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/secure-remote-access">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/onpremise-arch.webp" alt="Secure Remote Access" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Secure Remote Access</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/workforce-identity" class="menu-item-heading orange-text">Explore Workforce Identity&nbsp;<i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <p class="menu-column-heading">CUSTOMER IDENTITY</p>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/authentication">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/authentication.webp" alt="Single Sign-On" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Authentication</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/user-management">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/user-management.webp" alt="Identity Brokering" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">User Management</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/social-login">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/social-login.webp" alt="Universal Directory" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Social Login</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/passwordless-authentication">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/passwordless.webp" alt="SSPR" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Passwordless Login</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/adaptive-multi-factor-authentication-mfa">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/adaptive-mfa.webp" alt="Multi-factor Authentication" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Adaptive Access Policies</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/login-with-external-idp/configure-azure-ad-sso">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/azure-ad-icon.webp" alt="SSPR" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Azure AD Integration</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/login-with-external-idp/configure-aws-cognito-sso">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/aws-cognito-icon.webp" alt="SSPR" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">AWS Cognito Integration</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/customer-identity" class="menu-item-heading orange-text">Explore Customer Identity&nbsp;<i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <p class="menu-column-heading">PRIVILEGE ACCESS</p>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/privileged-access-management-pam">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/pam.webp" alt="PAM" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Privileged Access Management</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="menu-item-container">
+                <a href="/products/privileged-access-management-pam#endpoint-pam">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="/images/header/endpoint.svg" alt="Endpoint PAM" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Endpoint Privilege Management</p>
+                    </div>
+                  </div>
+                </a>
+              </div> -->
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/pam/password-vault">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/vault.svg" alt="Password Vault" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Password Vault</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/privileged-access-management-pam#agentless-pam">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/agentless-pam.svg" alt="Agentless PAM" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Agentless PAM</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/pam/privileged-session-monitoring">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/session-monitor.svg" alt="Session Monitor & Control" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Session Monitor & Control</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/pam/just-in-time-privileged-access">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/jit-access.svg" alt="JIT Access" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Just In Time Access</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/privileged-access-management-pam#privilege-management">
+                  <div class="menu-item">
+                    <div class="menu-item-icon-wrapper">
+                      <img src="https://www.miniorange.com/images/header/elevation.svg" alt="Privilege Elevation" height="20px" width="20px">
+                    </div>
+                    <div class="menu-item-text-warpper">
+                      <p class="menu-item-heading">Privilege Elevation & Delegation</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12" style="border-left: 1px solid #e3e3e3;">
+              <div class="menu-right-section">
+                <p class="menu-column-heading">DEPLOYMENT OPTIONS</p>
+                <p class="menu-column-text">Deploy IAM on environment of your choice</p><br>
+                <div>
+                  <p class="menu-right-section-head">Cloud IAM (IDaaS)</p>
+                  <p class="menu-right-section-text">Solution hosted on miniOrange cloud to secure your user identity.</p>
+                  <a href="https://www.miniorange.com/iam/free-trial" target="_blank" class="btn secondary-btn menu-right-section-link">Try Cloud</a>
+                </div><br><br>
+                <div>
+                  <p class="menu-right-section-head">Identity Server (On-Premise IAM)</p>
+                  <p class="menu-right-section-text">Host miniOrange IAM solution in your environment or in your servers</p>
+                   <a href="https://www.miniorange.com/iam/on-premise-identity-server/download" target="_blank" class="btn secondary-btn menu-right-section-link">Try On-Premise</a>
+                </div><br><br>
+                <div>
+                  <a href="https://www.miniorange.com/iam/pricing" class="primary-btn">Pricing</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="solutions" class="header-level-1-dropdown">
+        <span class="dropbtn">Solutions&nbsp;<i class="fas fa-angle-down"></i></span>
+        <div class="header-level-2-dropdown-content">   
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <p class="menu-column-heading">SSO SOLUTION</p><br>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/cloud-sso" class="menu-item-heading">Cloud Apps SSO</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/legacy-apps-sso-mfa" class="menu-item-heading">Legacy Apps SSO</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/native-mobile-apps-single-sign-on-sso" class="menu-item-heading">Mobile Apps SSO</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/employee-sso" class="menu-item-heading">Employee SSO</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <p class="menu-column-heading">MFA SOLUTION</p><br>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/vpn-mfa-multi-factor-authentication" class="menu-item-heading">MFA for VPN</p></a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/integrations/windows-multi-factor-authentication-mfa-login" class="menu-item-heading">Windows MFA</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/integrations/linux-multi-factor-authentication-mfa-login" class="menu-item-heading">Linux MFA</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/mac-multi-factor-authentication-mfa-login" class="menu-item-heading">Mac MFA</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/radius-mfa" class="menu-item-heading">RADIUS MFA</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/tacacs-authentication" class="menu-item-heading">TACACS Authentication</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/secure-network-devices" class="menu-item-heading">Secure Network Devices</p></a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/integrations/adfs-mfa" class="menu-item-heading">ADFS MFA</p></a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/ldap-mfa" class="menu-item-heading">LDAP MFA</p></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <p class="menu-column-heading">PROVISIONING SOLUTION<br></p><br>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/products/scim-provisioning-gateway" class="menu-item-heading">SCIM Provisioning Gateway</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/hr-driven-it-provisioning" class="menu-item-heading">HR Driven IT Provisioning</a>
+              </div><br><br>
+              <p class="menu-column-heading">ADAPTIVE MFA SOLUTION</p><br>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/risk-based-authentication-rba" class="menu-item-heading">Risk Based Authentication</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/ip-restriction" class="menu-item-heading">IP Restriction</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/how-to-block-email-access-in-office" class="menu-item-heading">Restrict Personal Email</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/device-restriction" class="menu-item-heading">Device Restriction</a>
+              </div>
+              <div class="menu-item-container">
+                <a href="https://www.miniorange.com/iam/solutions/geo-blocking" class="menu-item-heading">Geo-Location Restriction</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12" style="border-left: 1px solid #e3e3e3;">
+              <div class="menu-right-section">
+                <p class="menu-column-heading">BY INDUSTRY</p><br>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/customers/secure-mfa-solution-for-dbs">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/finance.svg" alt="Financial Service" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Financial Service</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/customers//secure-sso-solution-for-emirates-transport">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/government.svg" alt="Government" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Government</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/customers/secure-sso-and-mfa-solution-for-clarity-benefits-solutions">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/healthcare.svg" alt="Healthcare" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Healthcare</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/customers/single-sign-on-for-university-of-aruba">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/education.svg" alt="Educational" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Educational</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/customers/secure-sso-solution-for-senwave">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/retail.svg" alt="Retail" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Retail</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/customers/secure-sso-solution-for-pelephone">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/telecom.svg" alt="Telecom" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Telecom</p>
+                      </div>
+                    </div>
+                  </a>
+                </div><br>
+                <div>
+                  <a href="https://www.miniorange.com/iam/customers" class="primary-btn">Customer Stories</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="integration" class="header-level-1-dropdown">
+        <span class="dropbtn">Integrations&nbsp;<i class="fas fa-angle-down"></i></span>
+        <div class="header-level-2-dropdown-content">   
+          <div class="row">
+            <div class="col-xs-12 header-intg-col">
+              <div class="menu-right-section">
+                <p class="menu-column-heading">PRODUCTIVITY TOOLS</p>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/microsoft-365-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/office-365.svg" alt="Microsoft Office" height="25px" width="25px">
+                      </div> 
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Office 365</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/google-workspace-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/google.svg" alt="Google Workspace" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Google Workspace</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/zoho-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/zoho.svg" alt="Zoho" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Zoho</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/sap-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/sap.svg" alt="SAP" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">SAP</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/tableau-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/tableau.svg" alt="Tableau" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Tableau</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/bamboohr-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/bamboohr.svg" alt="BambooHR" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">BambooHR</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations" class="menu-item-heading">All Integrations&nbsp;<i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 header-intg-col">
+              <div class="menu-right-section">
+                <p class="menu-column-heading">COLLABORATION TOOLS</p>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/aws-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/aws.svg" alt="AWS" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">AWS</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/salesforce-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/salesforce.svg" alt="Salesforce" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Salesforce</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/slack-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/slack.svg" alt="Slack" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Slack</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/zoom-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/zoom.svg" alt="Zoom" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Zoom</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/figma-single-sign-on-(sso)">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/figma.svg" alt="Figma" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Figma</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/box-single-sign-on-(sso)">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/box.svg" alt="Box" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Box</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations" class="menu-item-heading">All Integrations&nbsp;<i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 header-intg-col">
+              <div class="menu-right-section">
+                <p class="menu-column-heading">VPN/VDI</p>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/fortinet-multi-factor-authentication-mfa">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/fortinet.svg" alt="Fortinet" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Fortinet</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/cisco-any-connect-multi-factor-authentication-mfa">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/anyconnect.svg" alt="AnyConnect" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Cisco AnyConnect</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/aws-workspaces-multi-factor-authentication-mfa">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/aws-workspace.svg" alt="AWS Workspace" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">AWS Workspace</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/two-factor-authentication-for-cisco-meraki">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/anyconnect.svg" alt="Meraki" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Cisco Meraki</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/two-factor-authentication-for-vmware-horizon-view">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/horizon-view.svg" alt="Horizon View" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Horizon View</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/sonicwall-multi-factor-authentication-mfa">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/sonicwall.svg" alt="Sonicwall" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Sonicwall</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/?id=vpn" class="menu-item-heading ">All Integrations&nbsp;<i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 header-intg-col">
+              <div class="menu-right-section">
+                <p class="menu-column-heading">Legacy Apps</p>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/oracle-ebs-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/oracle.svg" alt="Oracle EBS" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Oracle EBS</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/peoplesoft-single-sign-on-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/oracle.svg" alt="PeopleSoft" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">PeopleSoft</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/jd-edwards-single-sign-on-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/oracle.svg" alt="JD Edwards" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">JD Edwards</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/qlikview-single-sign-on-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/qlik.svg" alt="QlikView" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">QlikView</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/oracle-siebel-crm-single-sign-on-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/oracle.svg" alt="Siebel CRM" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Siebel CRM</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/sap-webgui-single-sign-on-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/sap.svg" alt="SAP WebGUI" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">SAP WebGUI</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/?id=legacyapps" class="menu-item-heading ">All Integrations&nbsp;<i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 header-intg-col">
+              <div class="menu-right-section">
+                <p class="menu-column-heading">Native/Mobile Apps</p>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/react-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/react.svg" alt="React" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">React</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/node-js-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/nodejs.svg" alt="Node.js" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Node.js</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/angular-single-sign-on-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/angular.svg" alt="Angular" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Angular</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/flutter-single-sign-on-sso">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/flutter.svg" alt="Flutter" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Flutter</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/python-adfs-single-sign-on(sso)">
+                    <div class="menu-item">
+                      <div class="menu-item-icon-wrapper">
+                        <img src="https://www.miniorange.com/images/header/python.svg" alt="Python" height="25px" width="25px">
+                      </div>
+                      <div class="menu-item-text-warpper">
+                        <p class="menu-item-heading">Python</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="menu-item-container">
+                  <a href="https://www.miniorange.com/iam/integrations/?id=mobileapps" class="menu-item-heading ">All Integrations&nbsp;<i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="pricing" class="header-level-1-dropdown">
+        <a href="https://www.miniorange.com/iam/pricing"><span class="dropbtn">Pricing</span></a>
+      </div>
+
+      <div id="resources" class="header-level-1-dropdown">
+        <span class="dropbtn">Resources&nbsp;<i class="fas fa-angle-down"></i></span>
+        <div class="header-level-2-dropdown-content">   
+          <div class="row">
+            <div class="col-md-9 menu-left-section">
+              <p class="menu-column-heading">EXPLORE</p>
+              <p class="menu-column-text">Resources to help you understand our product better</p>
+
+              <div class="row">
+                <div class="col-md-4 col-xs-12 menu-item-container-wrapper">
+                  <div class="menu-item-container">
+                    <a href="https://www.miniorange.com/iam/content-library" target="_blank">
+                      <div class="menu-item">
+                        <div class="menu-item-text-warpper">
+                          <p class="menu-item-heading">Content Library</p>
+                          <p class="menu-item-text">Get started and explore features</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="menu-item-container">
+                    <a href="https://www.miniorange.com/iam/why-miniorange" target="_blank">
+                      <div class="menu-item">
+                        <div class="menu-item-text-warpper">
+                          <p class="menu-item-heading">Why miniOrange</p>
+                          <p class="menu-item-text">Check what makes us fit for you</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="menu-item-container">
+                    <a href="https://blog.miniorange.com/" target="_blank">
+                      <div class="menu-item">
+                        <div class="menu-item-text-warpper">
+                          <p class="menu-item-heading">Blogs</p>
+                          <p class="menu-item-text">Explore in-depth insights on the latest</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="menu-item-container">
+                    <a href="https://www.miniorange.com/compliances/" target="_blank">
+                      <div class="menu-item">
+                        <div class="menu-item-text-warpper">
+                          <p class="menu-item-heading">Compliance & Security Policies</p>
+                          <p class="menu-item-text">To provide secure & resilient solutions</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12 menu-item-container-wrapper">
+                  <div class="menu-item-container">
+                    <a href="https://www.youtube.com/channel/UCxQuL2JNo8HA4baZSIjcgRg" target="_blank">
+                      <div class="menu-item">
+                        <div class="menu-item-text-warpper">
+                          <p class="menu-item-heading">Video Library</p>
+                          <p class="menu-item-text">To help you easy configure our products</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="menu-item-container">
+                    <a href="https://www.miniorange.com/iam/customers" target="_blank">
+                      <div class="menu-item">
+                        <div class="menu-item-text-warpper">
+                          <p class="menu-item-heading">Success Stories</p>
+                          <p class="menu-item-text">How we help to meet identity demand with ease</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="menu-item-container">
+                    <a href="https://faq.miniorange.com/" target="_blank">
+                      <div class="menu-item">
+                        <div class="menu-item-text-warpper">
+                          <p class="menu-item-heading">FAQs</p>
+                          <p class="menu-item-text">Answers to your common questions</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12 menu-item-container-wrapper">
+                  <div class="menu-item-container">
+                    <a href="https://www.miniorange.com/iam/integrations">
+                      <div class="menu-item">
+                        <div class="menu-item-text-warpper">
+                          <p class="menu-item-heading">App Integration Guides</p>
+                          <p class="menu-item-text">Docs to help you make it work</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="menu-item-container">
+                    <a href="https://developers.miniorange.com/docs/idp/" target="_blank">
+                      <div class="menu-item">
+                        <div class="menu-item-text-warpper">
+                          <p class="menu-item-heading">Developers Docs</p>
+                          <p class="menu-item-text">Docs to integrate with our APIs</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="menu-item-container">
+                    <a href="https://forum.miniorange.com/" target="_blank">
+                      <div class="menu-item">
+                        <div class="menu-item-text-warpper">
+                          <p class="menu-item-heading">Forum</p>
+                          <p class="menu-item-text">Interact with our experts</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="menu-right-section">
+                <p class="menu-column-heading">Support</p>
+                <p class="menu-column-text">Have question? We're here to help!</p><br>
+                 <a href="../admin-docs/index.html" target="_blank">
+                  <div> 
+                    <p class="menu-right-section-head">Admin Handbook</p>
+                    <p class="menu-right-section-text">Learn how to use our products and solutions</p>
+                  </div>
+                </a><br><br>
+                <a href="https://www.miniorange.com/iam/cloud-service-status" target="_blank">
+                  <div>
+                    <p class="menu-right-section-head">Cloud Service Status</p>
+                    <p class="menu-right-section-text">Check status of our cloud services in different regions</p>
+                  </div>
+                </a><br><br>
+                <a href="https://www.miniorange.com/iam/release-notes" target="_blank">
+                  <div>
+                    <p class="menu-right-section-head">Release Notes</p>
+                    <p class="menu-right-section-text">Latest updates of product and its feature</p>
+                  </div>
+                </a><br><br>
+                <div>
+                  <a href="https://www.miniorange.com/contact" class="primary-btn">Get Help</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="partners" class="header-level-1-dropdown">
+        <a href="https://www.miniorange.com/iam/partners"><span class="dropbtn">Partners</span></a>
+      </div>
+    </div>
+
+    <div class="menu-btn">
+      <a href="https://www.miniorange.com/iam/free-trial" target="_blank" class="primary-btn">Free Trial</a>
+      <a href="https://www.miniorange.com/contact" class="secondary-btn"><b>Contact Us</b></a>
+    </div>
+
+  </nav>
+
+  <div class="row upper-header upper-header-block" style="display:none;" id="header-display">
+    <div class="col-sm-12 link-container-alt">
+      <div>
+        <span>Meet us at EIC Conference 2024 Berlin to get insights of our products <a href="https://events.miniorange.com/pages/miniorange-at-eic" target="_blank"><u>Know More</u></a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  var desc_type="";
+  function adjustMenu(e) {
+  return $(window).width() <= "992" && 0 == e ? (displayhamburgerMenu(), e = 1) : $(window).width() > "992" && 1 == e && (displayMenu(), e = 0), e
+  }
+
+  function displayMenu() {
+    $(".appended-contact-info").remove(), $(".appended-search").empty(), $(".gsc-control-cse").css("margin", "0em"), $(".menu").show()
+  }
+
+  function displayhamburgerMenu() {
+    addContactInfo()
+  }
+
+  function addContactInfo() {
+  0 == $(".appended-contact-info").length && $(".menu-nav").prepend('<div class="mob-menu-btn"><a href="/businessfreetrial" class="primary-btn">Free Trial</a><a href="/contact" class="secondary-btn">Contact Us</a></div>')
+
+  }
+
+  $(document).ready(function() {
+    $flag = 0, $window_width = $(window).width(), $flag = adjustMenu($flag), $(window).resize(function() {
+      $flag = adjustMenu($flag), $window_width = $(window).width()
+    }), $(".header-card").click(function() {
+      var e = $(this).data("link");
+      window.open(e)
+    }), $("#hamburger-menu").click(function() {
+      "none" == $(".menu-nav").css("display") ? ($(".menu-nav").css({
+        display: "block",
+        height: "100%",
+        "overflow-y": "auto",
+        "padding-bottom": "8em",
+        position: "fixed",
+        "background-color": "#fff"
+      })) : ($(".menu-nav").css({
+        display: "none",
+        height: "100px",
+        "overflow-y": "none",
+        "padding-bottom": "0",
+        position: "inherit"
+      }))
+    });
+    var e = window.matchMedia("(max-width: 992px)");
+
+    function n() {
+      e.matches && $(".header-level-1-dropdown").click(function() {
+        "block" == $(this).children(".header-level-2-dropdown-content").css("display") ? ($(this).children(".header-level-2-dropdown-content").css({display: "none"}), 
+          $(this).children().find("i.fa-angle-up").addClass("fa-angle-down"), 
+          $(this).children().find("i").removeClass("fa-angle-up")) : ($(".header-level-2-dropdown-content").css({display: "none"}), 
+          $(this).children(".header-level-2-dropdown-content").css({display: "block"}), 
+          $(this).children().find("i.fa-angle-down").addClass("fa-angle-up"), 
+          $(this).children().find("i").removeClass("fa-angle-down"))
+      })
+    }
+    n(), e.addListener(n)
+  });
+</script>
+
+
+
+<div class="support-icon">
+  <div class="help-container">
+    <div class="need">
+      <span class="span2"></span>
+      <div class="div12">
+        <span> Hello there!</span><br>
+        <p class="helpline">Need Help? We are right here!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-btn">
+    <div class="service-icon">
+      <img src="https://www.miniorange.com/images/header/support-icon.svg" alt="Support Icon" class="service-img">
+    </div>
+  </div>
+</div>
+
+<div class="support-form-container">
+  <span class="span2"></span>
+  <div class="widget-header" >
+    <div class="widget-header-text">miniOrange Email Support</div>
+    <div class="widget-header-close-icon">
+      <i class="fa fa-times fa-2x exit3" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <div class="loading-inner" style="overflow:hidden;">
+    <div class="loading-icon">
+      <div class="loading-icon-inner">
+        <span class="icon-box">
+          <img class="icon-image" src="../../../images/success.png" alt="success">
+        </span>
+        <p class="loading-icon-text">
+        <p>Thanks for your Enquiry. Our team will soon reach out to you.<br><br>
+        If you don't hear from us within 24 hours, please feel free to send a follow-up email to <a href="mailto:info@xecurify.com">info@xecurify.com</a></p>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <form role="form" action="#" id="support-form" method="post" class="support-form top-label">
+    <div class="field-group" >
+      <label class="field-group-label" for="email">
+        <span class="label-name">Your E-mail:</span>
+      </label>
+      <input type="email" class="field-label-text" name="email" id="person_email" dir="auto" required="true"  title="Enter a valid email address." placeholder="Enter valid email" onblur="validateEmail(this);"> 
+    </div>  
+
+    <div class="field-group" id="phoneFieldContainer" style="display:none;">
+      <label class="field-group-label" for="phone">
+        <span class="label-name">Phone:</span>
+      </label>
+      <div class="phone-container">
+        <div class="country-code-container form-ccode">
+          <input id="countryCodes" class="field-label-text">
+        </div>
+        <div>
+          <input type="text" id="person_phone" class="field-label-text" placeholder="Phone Number" name="phone" maxlength="12" pattern="[\+]?[0-9]{1,4}[\s]?([0-9]{8,})?">
+        </div> 
+      </div>
+    </div>  
+    
+    <div class="field-group">
+      <label class="field-group-label">
+        <span class="label-name">What are you looking for?</span>
+      </label >
+      <select class="what_you_looking_for" required="true">
+        <option class="Select-placeholder" value="">Select Category</option>
+        <option value="Product Questions">Product Questions</option>
+        <option value="Sales Enquiry">Sales Enquiry</option>
+        <option value="Request a Quote">Request a Quote</option>
+        <option value="Schedule a Demo">Schedule a Demo</option>
+        <option value="Technical Support">Technical Support</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+    <div class="field-group">
+      <label class="field-group-label" for="description">
+        <span class="label-name">How can we help you?</span>
+      </label>
+      <textarea rows="5" id="person_query" name="description" dir="auto" required="true" class="field-label-textarea" placeholder="You will get reply via email"></textarea>
+    </div>
+    <div class="submit_button">
+      <button id="" type="submit" class="button1 button__appearance-primary submit-button" value="Submit" aria-disabled="false">Submit</button>
+    </div>
+  </form>
+</div>
+
+<style>
+	#headerSearchModal {
+		display: none;
+		position: fixed;
+		z-index: 9999;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0 0 0 / 70%);
+		justify-content: center;
+		align-items: center;
+	}
+
+	#headerSearchModalContainer {
+		background-color: #fff;
+		border-radius: 5px;
+		width: 70%;
+		overflow: auto;
+		height: 90vh;
+		padding: 3vh 3vw;
+	}
+
+	#closeHeaderSearchModal {
+		float: right;
+		font-size: 27px;
+		font-weight: 700;
+		color: red;
+		cursor: pointer;
+	}
+
+	#headerSearchModalContainer h3 {
+		display: inline-block;
+		margin-top: 10px;
+		color: #006ac9;
+		font-size: 1.4em;
+	}
+
+	#headerSearchModalPagination li {
+		cursor: pointer;
+	}
+
+	#headerSearchModalHeading {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #eee;
+		margin: -3vh -3vw;
+		padding: 1vh 3vw;
+		position: sticky;
+	}
+
+	#search-text-in-result {
+		margin: 10px 0px;
+		font-size: 3rem;
+	}
+	
+	#headerSearchForm{
+		position:relative;
+		margin-block-end: 0;
+	}
+
+	#headerSearchForm .spinner-border {
+		--bs-spinner-width: 2rem;
+		--bs-spinner-height: 2rem;
+		--bs-spinner-vertical-align: -0.125em;
+		--bs-spinner-border-width: 0.25em;
+		--bs-spinner-animation-speed: 0.75s;
+		--bs-spinner-animation-name: spinner-border;
+		border: var(--bs-spinner-border-width) solid currentcolor;
+		border-right-color: transparent;
+	}
+
+	#headerSearchForm .spinner-border,
+	#headerSearchForm .spinner-grow {
+		display: none;
+		position: absolute;
+		right: 2rem;
+		width: var(--bs-spinner-width);
+		height: var(--bs-spinner-height);
+		border-radius: 50%;
+		animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
+	}
+
+	#headerSearchForm .visually-hidden,
+	#headerSearchForm .visually-hidden-focusable:not(:focus):not(:focus-within) {
+		position: absolute !important;
+		clip: rect(0, 0, 0, 0) !important;
+	}
+
+	@media screen and (max-height: 600px) {
+		#headerSearchModalContainer {
+			height: 400px;
+		}
+	}
+
+	@media screen and (max-height: 700px) {
+		#headerSearchModalContainer {
+			height: 600px;
+		}
+	}
+
+	#headerSearchModalContainer::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	#headerSearchModalContainer::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 10px;
+	}
+
+	#headerSearchModalContainer::-webkit-scrollbar-thumb {
+		background-color: #ccc;
+		border-radius: 10px;
+	}
+
+	@keyframes spinner-border {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	#headerSearchIcon {
+		cursor: pointer;
+		outline: none;
+		position: absolute;
+		left: 1rem;
+		padding: 1.2rem;
+	}
+
+	input#headerSearchText {
+		height: 34px;
+		font-size: 14px;
+		border-radius: 5px;
+		color: #525252;
+		outline: none;
+		background: #fff;
+		border: 2px solid #eee;
+		padding: 0 0.5rem 0 3.5rem;
+		width: 20rem;
+		margin: 0 1rem;
+	}
+
+	#headerSearchIcon i.fa-search {
+		position: relative;
+		color: #5d5d5d;
+		font-size: 1.3rem;
+		padding: 0.5rem 0;
+	}
+
+	.active-page span {
+		background-color: rgb(238, 238, 238) !important;
+		color: #16212b !important;
+		border: 1px solid #909090 !important;
+	}
+
+	.pagination>li>span {
+		margin-left: 0px !important;
+	}
+</style>
+
+<div id="headerSearchModal">
+	<div id="headerSearchModalContainer">
+		<div id="headerSearchModalHeading">
+			<p id="search-results">Search Results: <span id='search-text-in-result'></span></p>
+			<span id="closeHeaderSearchModal">×</span>
+		</div>
+		<hr />
+		<div id="searchResultModalContent">
+
+		</div>
+		<nav aria-label="Page navigation example" class="mt-5 text-center" id="headerSearchModalPagination">
+			<ul class="pagination">
+				<li class="page-item pagination-prev" role="button">
+					<span class="page-link" onClick="handlePaginationPrev()" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</span>
+				</li>
+				<li class="page-item pagination-next" role="button">
+					<span class="page-link" onClick="handlePaginationNext()" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</span>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<script>
+	// let totalSearchQueries = 0;
+	//no-reply@miniorange.com account.
+	//Project: miniOrange
+	let API_KEY = "AIzaSyB-eZ3xH7UoH-Fz4eIVMFOD47mTpYey2EE";
+	let API_CX = "411e9e6bf958d4781";
+
+	//rohan@xecurify.com account
+	//Project: miniOrange search
+	const BCKP_API_KEY = "AIzaSyATniXdZuqHJmxOAOPHsW4TVh64xmVYKZc";
+	const BCKP_API_CX = "315eac8e74b4c4475";
+	let custSearchQuery = "";
+	let totalSearchQueries = 0;
+	let activePage = 1;
+	const resultsPerPage = 10;
+	const maxPageLimit = 10;
+	let paginationLimit = 10;
+	let totalPagination = Math.ceil(totalSearchQueries / paginationLimit);
+	let currentPaginationWindowstart = 1;
+	let searchResult = [];
+
+	const handlePaginationNext = () => {
+		if (currentPaginationWindowstart != 0 && currentPaginationWindowstart + paginationLimit < totalPagination) {
+			currentPaginationWindowstart += paginationLimit;
+			populatePagination();
+		}
+	}
+
+	const handlePaginationPrev = () => {
+		if (currentPaginationWindowstart > 1) {
+			currentPaginationWindowstart -= paginationLimit;
+			populatePagination();
+		}
+	}
+
+	const populatePagination = () => {
+		$('.remove-pagination-item').remove();
+
+		let newPagination = "";
+		for (let i = currentPaginationWindowstart; i < currentPaginationWindowstart + paginationLimit; i++) {
+			if (i > totalPagination)
+				break;
+			newPagination += `<li class="page-item remove-pagination-item"><span class="page-link" data-href="${i}" onClick="handlePaginationClick(this)">${i}</span></li>`;
+		}
+		if(maxPageLimit == 10){
+			$('.pagination-next, .pagination-prev').addClass('disabled');
+		}
+		else if (currentPaginationWindowstart == 1) {
+			$('.pagination-prev').addClass('disabled cursor-not-allowed');
+			$('.pagination-next').removeClass('disabled');
+		} else if (currentPaginationWindowstart + paginationLimit >= totalPagination) {
+			$('.pagination-next').addClass('disabled');
+			$('.pagination-prev').removeClass('disabled');
+
+		} else
+			$('.pagination-prev, .pagination-next').removeClass('disabled cursor-not-allowed');
+
+		$(newPagination).insertAfter('.pagination-prev');
+		$(`.page-item:nth-child(2)`).addClass("active-page");
+	}
+
+	const handlePaginationClick = (e) => {
+		const page = $(e).data("href");
+		$('.page-item').removeClass("active-page");
+    	$(`.page-item:nth-child(${page+1})`).addClass("active-page");
+		const startPoint = (page - 1) * resultsPerPage;
+		fetchSearchResult(custSearchQuery, startPoint);
+	}
+
+	const getSearchDomReady = (searchResults, status) => {
+		$('#searchResultModalContent').empty();
+		if (status) {
+			$('#headerSearchModalPagination').show();
+			searchResults.map((item) => {
+				$('#searchResultModalContent').append(`<div class="row pt-5">
+				<div class="">
+				<a href="${item.link}">${item.link}</a><br/>
+				<a href="${item.link}" target="_blank"><h3>${item.htmlTitle}</h3></a>
+				</div>
+				<div>
+					<p>${item.snippet}</p>
+				</div>
+				<hr/>
+			</div>`);
+			});
+			$('#headerSearchModalContainer').animate({
+				scrollTop: "0px"
+			});
+		} else {
+			$('#headerSearchModalPagination').hide();
+			$('#searchResultModalContent').append('<p style="font-size: 2rem;">No Results Found!!!</p>');
+		}
+		$('.spinner-border').hide();
+	}
+
+	const fetchSearchResult = (searchQuery, start = 1) => {
+		$.ajax({
+			url: `https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyATniXdZuqHJmxOAOPHsW4TVh64xmVYKZc&cx=315eac8e74b4c4475&start=${start}&q=${searchQuery}`,
+			method: 'GET',
+			success: function(response) {
+				const table = document.getElementById("search_result");
+				searchResult = response.items;
+				let status = false;
+				totalSearchQueries = response.searchInformation.totalResults;
+				if (totalSearchQueries != 0) {
+					status = true;
+					totalPagination = Math.ceil(totalSearchQueries / paginationLimit);
+					totalPagination = totalPagination > maxPageLimit ? maxPageLimit : totalPagination;
+					currentPaginationWindowstart = 1;
+					if (custSearchQuery != searchQuery) {
+						custSearchQuery = searchQuery;
+						populatePagination();
+					}
+				}
+				getSearchDomReady(searchResult, status);
+				$('#headerSearchModal').css('display', 'flex');
+
+				// const title = item.title;
+				// const desc = item.snippet;
+				// const link = item.link;
+
+				// response.items.map((item, index) => {
+				// 	const row = table.insertRow(index + 1);
+				// 	const title = row.insertCell(0);
+				// 	const url = row.insertCell(1);
+				// 	url.innerHTML = `<a href="${item.link}">${item.link}</a>`;
+				// 	title.innerHTML = item.title;
+				// });
+			},
+			error: function(xhr) {
+				if(xhr.status === 429 && API_KEY !== BCKP_API_KEY && API_CX !== BCKP_API_CX){
+					API_KEY = BCKP_API_KEY;
+					API_CX = BCKP_API_CX;
+					fetchSearchResult(searchQuery, start);
+				}
+			}
+		});
+	}
+
+	$(document).ready(function() {
+		$('#headerSearchForm').submit(function(e) {
+			e.preventDefault();
+			let searchQuery = $('#headerSearchText').val();
+			searchQuery = searchQuery.replace(new RegExp("<[/]*[a-zA-Z]+>", "gm"), "");
+			$("#search-text-in-result").text(searchQuery);
+			searchQuery = searchQuery.replaceAll(" ", "+");
+			if (searchQuery != "") {
+				$('.spinner-border').show();
+				fetchSearchResult(searchQuery);
+			} else {
+				$('#headerSearchText').show();
+			}
+		});
+		$('#closeHeaderSearchModal').click(() => {
+			$("headerSearchText").value = '';
+			$('#headerSearchModal').hide();
+		})
+	});
+</script>
+
+
+<script type="text/javascript">
+  
+    function validateEmail(emailField){
+      var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+      if (reg.test(emailField.value) == false) 
+      {
+          return false;
+      }else{
+        return true;
+      }
+    }
+
+    function supportreq(){
+    $('.support-form-container').show();
+    $('#support-form .what_you_looking_for').val('');
+  }
+</script><div class="row">
+	<div class="iam-header-row">
+		<div class="col-md-12">
+			<div class="col-md-7">
+				<h1 class="h2 margin-top-1"><span class="prod-banner-h-t1">SMTP&nbsp;</span><span class="prod-banner-h-t2">Gateways</span></h1>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+				<form class="frm">
+					<input class="ipt input-box" id="searchCategory" type="search" placeholder="Search Your Gateway ">
+				</form>
+				<div id="error">
+					<h3>Nothing Found.</h3>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+</div>
+
+<div class="products-section">
+	<div class="box_border" data-link="/iam/content-library/smtp-gateways/setup-sparkpost-as-smtp"><a class="smtp_set_up_guides">
+			<img class="img" src="https://www.miniorange.com/images/smtp-gateways/sparkpost-logo.webp" alt="SparkPost-logo">
+			<p>SparkPost SMTP</p>
+		</a>
+	</div>
+
+	<div class="box_border" data-link="/iam/content-library/smtp-gateways/setup-mailtrap-email-testing-as-dummy-smtp"><a class="smtp_set_up_guides">
+			<img class="img" src="https://www.miniorange.com/images/smtp-gateways/mailtrap-logo.webp" alt="Mailtrap-logo">
+			<p>MailTrap SMTP</p>
+		</a>
+	</div>
+
+	<div class="box_border" data-link="/iam/content-library/smtp-gateways/setup-office365-as-smtp"><a class="smtp_set_up_guides">
+			<img class="img" src="https://www.miniorange.com/images/smtp-gateways/office365-logo.webp" alt="Office365-logo">
+			<p>Office365 SMTP</p>
+		</a>
+	</div>
+
+	<div class="box_border" data-link="/iam/content-library/smtp-gateways/setup-amazon-ses-as-smtp"><a class="smtp_set_up_guides">
+			<img class="img" src="https://www.miniorange.com/images/smtp-gateways/aws-logo.webp" alt="amazon-ses-logo">
+			<p>Amazon SES SMTP</p>
+		</a>
+	</div>
+
+	<div class="box_border" data-link="/iam/content-library/smtp-gateways/setup-gmail-as-smtp"><a class="smtp_set_up_guides">
+			<img class="img" src="https://www.miniorange.com/images/smtp-gateways/gmail-logo.webp" alt="Gmail-logo">
+			<p>Gmail SMTP</p>
+		</a>
+	</div>
+
+
+	<div class="box_border" data-link="/iam/content-library/smtp-gateways/setup-zoho-as-smtp"><a class="smtp_set_up_guides">
+			<img class="img" src="https://www.miniorange.com/images/smtp-gateways/zoho-logo.webp" alt="Zoho-logo">
+			<p>Zoho SMTP</p>
+		</a>
+	</div>
+
+	<div class="box_border" data-link="/iam/content-library/smtp-gateways/setup-mailgun-as-smtp"><a class="smtp_set_up_guides">
+			<img class="img" src="https://www.miniorange.com/images/smtp-gateways/mailgun-logo.webp" alt="Mailgun-logo">
+			<p>Mailgun SMTP</p>
+		</a>
+	</div>
+	<div class="box_border" data-link="/iam/content-library/smtp-gateways/setup-mimecast-as-smtp"><a class="smtp_set_up_guides">
+			<img class="img" src="https://www.miniorange.com/images/smtp-gateways/mimecast-logo.webp" alt="Mimecast-logo">
+			<p>Mimecast SMTP</p>
+		</a>
+	</div>
+</div>
+
+<!---recaptcha script-->
+<script src='../../../../www.google.com/recaptcha/api.js'></script>
+<script>
+	$.getScript("../../../../www.google.com/recaptcha/api.js");
+	window.onload = function() {
+		var $recaptcha = document.querySelector('#g-recaptcha-response');
+		if ($recaptcha) {
+			$recaptcha.setAttribute("required", "required");
+		}
+	};
+</script>
+<style>
+	#g-recaptcha-response {
+
+		display: block !important;
+		position: absolute;
+		margin: -78px 0 0 0 !important;
+		width: 302px !important;
+		height: 76px !important;
+		z-index: -999999;
+		opacity: 0;
+	}
+</style>
+<!--End of recaptcha script-->
+
+
+<script src="../../../../cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../../../../cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<script src="../../../../cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.3/moment-timezone-with-data.min.js"></script>
+<link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.min.css" integrity="sha512-TQQ3J4WkE/rwojNFo6OJdyu6G8Xe9z8rMrlF9y7xpFbQfW5g8aSWcygCQ4vqRiJqFsDsE1T6MoAOMJkFXlrI9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<div class="row background-img-dot">
+	<div class="container" id="request-demo-section">
+		<div class="request-demo-wrapper">
+			<h2 class="request-demo-heading" id="request-demo" style="margin-top:50px;">Want To Schedule A Demo?</h2>
+			<div class="request-demo-card">
+				<div class="col-md-5">
+					<img src="https://www.miniorange.com/images/product-page/request-demo-banner.webp" height="380px" width="auto" alt="Request a Demo" loading="lazy">
+				</div>
+				<div class="col-md-7">
+					<div class="request-demo-msg-modal">
+						<span class="info-icon"><i class="fas"></i>&nbsp;&nbsp;</span>
+						<span class="request-demo-msg"></span>
+					</div>
+					<form method="POST" action="#" class="request_demo_form" id="request_demo_form">
+						<div class="form-group contact-column">
+							<label>Work Email&nbsp;<span class="text-danger">*</span></label>
+							<input aria-label="Work Email" type="email" name="contact_email" id="request_demo_email" required="true" placeholder="Enter valid email" class="form-control bft-textarea">
+						</div><br>
+						<div class="form-group contact-column" id="phoneFieldContainer">
+							<label for="phone">
+								<p><b>Phone*</b></p>
+							</label>
+							<div class="phone-container">
+								<div class="country-code-container">
+									<input aria-label="Country Code" id="countryCodes" class="field-label-text country-codes-format form-control bft-textarea">
+								</div>
+								<div class="phone-no-flex">
+									<input aria-label="Phone Number" type="text" id="request_demo_phone" class="field-label-text phone-container-field form-control bft-textarea" placeholder="Phone Number" name="phone" required pattern="[\+]?[0-9]{1,4}[\s]?([0-9]{8,})?" maxlength="12">
+								</div>
+							</div>
+						</div><br>
+
+						<div class="form-group contact-column">
+							<label for="checkin" class="field-label">Book your time slot</label><br>
+							<div class="book-slot-section">
+								<div class="datetime-input">
+									<label for="checkin" class="field prepend-icon">
+										<input aria-label="Calendar" type="datetime-local" id="checkin" max="2100-12-31T23:59" name="calendar" onclick="this.showPicker()" class="gui-input form-control bft-textarea" placeholder="mm/dd/yyyy">
+								</div>
+
+								<div class="timezone-input">
+									<select aria-label="Timezone" class="form-control bft-textarea" id="dropdownTimeZone"></select>
+								</div>
+							</div>
+							</label>
+						</div>
+						<div class="g-recaptcha" id="rcaptcha" data-sitekey="6LdxQgUhAAAAALdpow7WAwz8AWa9wWmKICf3650N"></div>
+						<span id="captcha" style="color:red;"></span> <!-- this will show captcha errors -->
+						<input aria-label="Submit Request Demo" class="btn prod-banner-btn" type="submit" name="request_demo_btn" value="Request Demo" id="request_demo_submit_button" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+
+
+</style>
+
+<script>
+	var invalid = false;
+	$(document).ready(function() {
+		$(".country-codes-format").intlTelInput();
+		$(".country-codes-format").prop('readonly', true);
+		$(".country-codes-format").addClass("form-control[readonly]");
+		$('#request_demo_email').on('keyup', function() {
+
+			var email = $(this).val().toLowerCase();
+			if (email.endsWith("@gmail.com") || email.endsWith('@yahoo.com') || email.endsWith('@hotmail.com') || email.endsWith('@protonmail.com') || email.endsWith('@yahoo.co.in') || email.endsWith('@outlook.com')) {
+				fail();
+				invalid = true;
+			} else if (invalid) {
+				$('.request-demo-msg-modal').slideToggle("slow", "linear");
+				invalid = false;
+			}
+		});
+
+	});
+
+	function isValidEmail(email) {
+		if (email.toLowerCase().endsWith("@gmail.com") || email.toLowerCase().endsWith('@yahoo.com') || email.toLowerCase().endsWith('@hotmail.com') || email.toLowerCase().endsWith('@protonmail.com') || email.toLowerCase().endsWith('@yahoo.co.in') || email.toLowerCase().endsWith('@outlook.com')) {
+			fail();
+		}
+		return true;
+	}
+
+	function success() {
+		$('.request-demo-wrapper .request-demo-msg-modal').removeClass('text-danger bg-danger');
+		$('.request-demo-wrapper .request-demo-msg-modal').addClass('text-success bg-success');
+
+		$('.request-demo-wrapper .request-demo-msg-modal i').removeClass('fa-info-circle');
+		$('.request-demo-wrapper .request-demo-msg-modal i').addClass('fa-check-circle');
+		$('.request-demo-wrapper .request-demo-msg-modal .request-demo-msg').text('Thank you for reaching out to us. We will get back to you soon.');
+		$('.request-demo-msg-modal').hide();
+		$('.request-demo-msg-modal').slideToggle("slow", "linear");
+		$('#request_demo_email,#request_demo_phone').val('');
+		setTimeout(function() {
+			$('#checkin').val('');
+		}, 200);
+		setTimeout(function() {
+			loadTimeZoneList();
+		}, 50);
+		// setTimeout(function(){$('.request-demo-msg-modal').slideToggle("slow","linear");},3000);
+	}
+
+
+	function fail() {
+		$('.request-demo-wrapper .request-demo-msg-modal').removeClass('text-success bg-success');
+		$('.request-demo-wrapper .request-demo-msg-modal').addClass('text-danger bg-danger');
+
+		$('.request-demo-wrapper .request-demo-msg-modal i').removeClass('fa-check-circle');
+		$('.request-demo-wrapper .request-demo-msg-modal i').addClass('fa-info-circle');
+		$('#request_demo_email').val('');
+		$('.request-demo-wrapper .request-demo-msg-modal .request-demo-msg').text('Please use Your Business Email.');
+		if (!invalid)
+			$('.request-demo-msg-modal').slideToggle("slow", "linear");
+		// setTimeout(function(){$('.request-demo-msg-modal').slideToggle("slow","linear");},3000);
+	}
+</script>
+
+<script>
+	var next_day = new Date(new Date().setDate(new Date().getDate() + 1)).toISOString().slice(0, 16);
+	var final = parseInt(next_day);
+	document.getElementsByName("calendar")[0].min = next_day;
+
+	function loadTimeZoneList() {
+		let select = document.getElementById("dropdownTimeZone");
+		select.innerHTML = "";
+		let browserTimeZone = moment.tz.guess();
+		let timeZones = moment.tz.names();
+		timeZones.forEach((timeZone) => {
+			option = document.createElement("option");
+			option.textContent = `${timeZone} (GMT${moment.tz(timeZone).format('Z')})`;
+			option.value = timeZone;
+			if (timeZone == browserTimeZone) {
+				option.selected = true;
+			}
+			select.appendChild(option);
+		});
+	}
+
+	function init() {
+		loadTimeZoneList();
+	}
+	init();
+</script>
+<div class="compare-box">
+	<p class="h1 other-prod-main-heading">Our Other Identity & Access Management Products</p>
+
+	<div class="other-prod-box">
+		<div class="other-prod-section">
+			<a href="https://www.miniorange.com/products/single-sign-on-sso">
+				<div class="other-product-box">
+					<span class="fa-stack fa-2x">
+					  <i class="fa fa-circle-thin fa-stack-2x"></i>
+					  <i class="fas fa-sitemap other-prod-icon fa-stack-1x"></i>
+					</span>
+				</div>
+				<h4 class="other-prod-heading">Single Sign-On</h4>
+				<p class="other-prod-text">Seamless login for workforce and customer identity to cloud or on-premise apps</p>
+				<span class="other-prod-link">Learn more</span>
+			</a>
+		</div>
+
+		<div class="other-prod-section">
+			<a href="https://www.miniorange.com/products/multi-factor-authentication-mfa">
+				<div class="other-product-box">
+					<span class="fa-stack fa-2x">
+					  <i class="fa fa-circle-thin fa-stack-2x"></i>
+					  <i class="fas fa-fingerprint other-prod-icon fa-stack-1x"></i>
+					</span>
+				</div>
+				<h4 class="other-prod-heading">Multi-factor Authentication</h4>
+				<p class="other-prod-text">Secure access for identities with an additional layer of authentication</p>
+				<span class="other-prod-link">Learn more</span>
+			</a>
+		</div>
+
+		<div class="other-prod-section">
+			<a href="https://www.miniorange.com/products/adaptive-multi-factor-authentication-mfa">
+				<div class="other-product-box">
+					<span class="fa-stack fa-2x">
+					  <i class="fa fa-circle-thin fa-stack-2x"></i>
+					  <i class="far fa-comment-dots other-prod-icon fa-stack-1x"></i>
+					</span>
+				</div>
+				<h4 class="other-prod-heading">Adaptive Authentication</h4>
+				<p class="other-prod-text">Block or grant user access based on IP, Device, Time & Location</p>
+				<span class="other-prod-link">Learn more</span>
+			</a>
+		</div>
+
+		<div class="other-prod-section">
+			<a href="https://www.miniorange.com/products/user-provisioning">
+				<div class="other-product-box">
+					<span class="fa-stack fa-2x">
+					  <i class="fa fa-circle-thin fa-stack-2x"></i>
+					  <i class="fas fa-user-plus other-prod-icon fa-stack-1x"></i>
+					</span>
+				</div>
+				<h4 class="other-prod-heading">Lifecycle Management</h4>
+				<p class="other-prod-text">Manage & automate user provisioning and deprovisioning to apps</p>
+				<span class="other-prod-link">Learn More</span>
+			</a>
+		</div>
+	</div>
+</div><footer id="footerId" class="footer-main-container">
+	<nav class="footer-main">
+		<div class="footer-container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12">
+
+					<div class="col-md-3 col-xs-12 col-sm-12">
+						<img class="mo-footer" src="https://www.miniorange.com/images/footer/miniorange-white.webp" alt="miniorange logo"><br>
+						<div class="left-most-outer-containe margin-top-1">
+							<div class="margin-top-1">
+								<div class="footer-inner-phone-details">
+									<span class="fa fa-phone"></span>
+								</div>
+								<div>
+									<p class="footer-phone-text">+1 978 658 9387 (US)<br>+91 97178 45846 (India)</p>
+								</div>
+							</div>
+
+							<div>
+								<div class="footer-email-details">
+									<span class="fa fa-envelope"></span>
+								</div>
+								<div class="footer-email-text">
+									<p><a href="mailto:info@xecurify.com">info@xecurify.com</a></p>
+								</div>
+							</div>
+
+							<button class="btn primary-btn" onclick="location.href='https://www.miniorange.com/contact'">CONTACT US</button><br>
+
+							<div class="margin-top-1">			
+								<h4 class="footer-stay-connected margin-top-1">STAY CONNECTED</h4>
+								<a href="https://www.linkedin.com/company/miniorange" title="Linkedin"  rel="noreferer, noopener" target="_blank" class="social-icon-color" style="text-decoration:none;">
+								<span class="fa-stack social-icon-outer-font"> <i class="fa fa-stack-2x"></i> <i class="fab fa-linkedin-in fa-stack-1x footer-social-icon-font"></i> </span></a>
+	
+								<a href="https://www.youtube.com/channel/UCxQuL2JNo8HA4baZSIjcgRg" title="YouTube"  rel="noreferer, noopener" target="_blank" class="social-icon-color" style="text-decoration:none;">
+								<span class="fa-stack social-icon-outer-font"> <i class="fa fa-stack-2x"></i> <i class="fab fa-youtube fa-stack-1x footer-social-icon-font"></i> </span></a>
+
+								<a href="https://twitter.com/miniOrange_Inc" title="Twitter" target="_blank"  rel="noreferer, noopener" class="social-icon-color" style="text-decoration:none;">
+								<span class="fa-stack social-icon-outer-font"> <i class="fa fa-stack-2x"></i> <i class="fab fa-twitter fa-stack-1x footer-social-icon-font"></i> </span></a>
+
+								<a href="https://www.facebook.com/miniorangeinc/" title="Facebook"  rel="noreferer, noopener" target="_blank" class="social-icon-color" style="text-decoration:none;">
+								<span class="fa-stack social-icon-outer-font"> <i class="fa fa-stack-2x"></i> <i class="fab fa-facebook-f fa-stack-1x footer-social-icon-font"></i> </span></a>	
+							</div>
+						</div>
+					</div><br>
+
+					<div class="col-md-9 col-xs-12 col-sm-12">
+						<div class="col-md-4">
+							<p class="footer-item-heading">Product</p>
+							<ul class="footer-main-sub-items">
+								<li><a href="https://www.miniorange.com/products/single-sign-on-sso">Single Sign-On</a></li>
+								<li><a href="https://www.miniorange.com/products/identity-broker-service">Identity Brokering</a></li>
+								<li><a href="https://www.miniorange.com/products/two-factor-authentication-(2fa)">Two-factor Authentication</a></li>
+								<li><a href="https://www.miniorange.com/products/privileged-access-management-pam">Privileged Access Management</a></li>
+								<li><a href="https://www.miniorange.com/iam/solutions/risk-based-authentication-rba">Risk Based Authentication</a></li>
+								<li><a href="https://www.miniorange.com/products/user-lifecycle-management">User Lifecycle Management</a></li>
+								<li><a href="https://www.miniorange.com/products/directory-services">Directory Services</a></li>
+								<li><a href="https://www.miniorange.com/products/oauth2-server">OAuth / OpenID Connect Server</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<p class="footer-item-heading">Solutions</p>
+							<ul class="footer-main-sub-items">
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=sso">SSO Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=mfa">2FA Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=mobileapps">Mobile Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=provisioning">Provisioning Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=windows">Windows Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=accessrestriction">Adaptive MFA Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=directories">Directory Integrations</a></li>
+								<!-- li><a href="/integrations/?id=secure-browser" target="_blank">Secure Browser SSO</a></li> -->
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<p class="footer-item-heading">Company
+							<ul class="footer-main-sub-items">
+								<li><a href="https://www.miniorange.com/about_us">About Us</a></li>
+								<li><a href="https://www.miniorange.com/iam/why-miniorange/" target="_blank">Why miniOrange</a></li>
+								<li><a href="https://www.miniorange.com/customers">Customers</a></li>
+								<li><a href="https://www.miniorange.com/iam/partners" target="_blank">Partners</a></li>
+								<li><a href="https://www.miniorange.com/newsandevents">News</a></li>
+								<li><a href="https://www.miniorange.com/career">Careers</a></li>
+								<li><a href="https://www.miniorange.com/contact">Contact Us</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-2">
+							<p class="footer-item-heading">Resources</p>
+							<ul class="footer-main-sub-items">
+								<li><a href="https://blog.miniorange.com/" target="_blank">Blogs</a></li>
+								<li><a href="https://www.youtube.com/channel/UCxQuL2JNo8HA4baZSIjcgRg" target="_blank">Videos</a></li>
+								<li><a href="https://faq.miniorange.com/" target="_blank">FAQs</a></li>
+								<li><a href="https://forum.miniorange.com/" target="_blank">Forum</a></li>
+								<li><a href="https://developers.miniorange.com/docs/idp/" target="_blank">API Docs</a></li>
+								<li><a href="https://www.miniorange.com/terms-and-policies/privacy-policy" target="_blank">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>	
+	</nav>
+
+	<section class="mo-footer-bottom-info">
+		<div class="footer-container text-center">
+			<span> &copy; Copyright &nbsp;2024&nbsp;  miniOrange Security Software Pvt Ltd. All Rights Reserved. &nbsp<a href="https://www.miniorange.com/disclaimer" target="_blank" class="social-icon-color disclaimer-text">Disclaimer </a></span>
+		</div>
+	</section>
+	<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+
+</footer>
+
+<!-- javascript -->
+<!-- Placed at the end of the document so the pages load faster -->
+  <script src="../../../js/jquery.min.js"></script>
+	<script src="../../../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script async type="text/javascript" src="../../../js/bootstrap-scrollspy.min.js"></script>
+	<script type="text/javascript" src="../../../js/image-enlarge.min.js"></script>
+	<script type="text/javascript" src="../../../js/support-form.mincf1b.js?ver=3.2"></script>
+	<script type="text/javascript" src="../../../js/responsive.min.js"></script>
+	<script type="text/javascript" src="../../../js/right_nav.min6a79.js?ver=0.5"></script>  
+	<script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+	
+	<!-- <script>
+		!function ($) {
+			$(function(){
+				// carousel demo
+				$('#myCarousel').carousel()
+			})
+		}(window.jQuery)
+	</script> -->
+  <script async type="text/javascript" src="../../../js/holder.min.js"></script> 
+	<script type="text/javascript" src="../../../js/intlTelInput.min.js"></script>
+
+	<script>
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#return-to-top').fadeIn(200);    // Fade in the arrow
+		} else {
+			$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+		}
+	});
+	$('#return-to-top').click(function() {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop : 0                       // Scroll to top of body
+		}, 500);
+	});
+
+	//End of Back to Top Button Script
+	</script>
+	<script>
+		function openUseCase() {
+		var a = document.forms["myForm"]["entry.428130736"].value;
+		var b = document.forms["myForm"]["entry.1436371876"].value;
+		var c = document.forms["myForm"]["entry.1743623830"].value;
+		var d = document.forms["myForm"]["entry.840812124"].value;
+		if (a==null || a=="") {
+
+			}
+		else if(b==null || b==""){
+
+		}
+		else if(c==null || c==""){
+
+		}
+		else if(d==null || d==""){
+
+		}
+
+		else{
+			
+			window.open('usecases/' + document.getElementById('entry_726395439').value);
+			}
+			
+			}
+	</script>
+	<style id="antiClickjack">
+		body{display:none !important;}
+	</style>
+	<script type="text/javascript">
+		if (self === top) { 
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+<!-- /.footer -->
+</body>
+
+<!-- Mirrored from www.miniorange.com/iam/content-library/smtp-gateways/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jul 2024 04:36:34 GMT -->
+</html>
+
+
+<!-- <p> If your SMTP provider is not listed above then please reach out to us on <b>info@xecurify.com</b>.</p> -->
+
+<script>
+	$(document).ready(function() {
+		$('#searchCategory').on('keyup', function() {
+			var srch = $(this).val().toLowerCase();
+			var flag = false;
+			$('.box_border').filter(function() {
+
+				$(this).toggle($(this).children().find('img').attr('alt').toLowerCase().indexOf(srch) > -1)
+				if ($(this).children().find('img').attr('alt').toLowerCase().indexOf(srch) > -1) {
+					flag = true;
+				}
+
+			});
+			if (flag) {
+				document.getElementById("error").style.display = 'none';
+				$('.guideline-idp-wrapper h3').show();
+
+			} else {
+				$('.guideline-idp-wrapper h3').hide();
+				document.getElementById("error").style.display = 'block';
+			}
+		});
+
+	});
+</script>
+
+<script>
+	$('.box_border').click(function() {
+		var link = $(this).data('link');
+		window.open(link, '_blank');
+	});
+</script>
