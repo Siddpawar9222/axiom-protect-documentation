@@ -43,6 +43,8 @@
 <link rel="stylesheet" type="text/css" href="../../../css/doc.min53cf.css?ver=2.1" />
 <link rel="stylesheet" type="text/css" href="../../../css/header.min6de8.css?ver=3.3">
 <link rel="stylesheet" type="text/css" href="../../../css/product-page.minef85.css?ver=3.7">
+<link rel="stylesheet" type="text/css" href="../../../css/userDevice.css">
+
 
 <link rel="stylesheet" href="../../../../use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -122,23 +124,7 @@
      
 <div class="header">
   <div class="row upper-header">
-    <div class="col-sm-12 link-container">
-      <div>
-      <!-- <span>Meet us at EIC Conference 2024 Berlin to explore our solutions <a href="https://events.miniorange.com/pages/miniorange-at-eic" target="_blank"><u>Know More</u></a></span> -->
-      </div>
-      <div class="up-hd-btns">
-        <a href="tel:+1 978 658 9387 (US)">&nbsp;+1 978 658 9387&nbsp;</a>
-        <a href="https://login.xecurify.com/moas/login"><i class="far fa-user-circle"></i>&nbsp;&nbsp;Login&nbsp;&nbsp;</a>
-        <!-- Search -->
-        <form action="#" method="post" id="headerSearchForm" class="up-hd-btns">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <input type="text" id="headerSearchText" placeholder="Search" onkeyup="this.setAttribute('value', this.value);" value="">
-          <button type="submit" class="btn btn-link" id="headerSearchIcon"><i class="fas fa-search"></i></button>
-        </form>
-      </div>
-    </div>
+   
   </div>
 
   <nav class="menu family-Poppins">
@@ -147,14 +133,17 @@
         <i class="fa fa-bars"></i>
       </span>
     </div>
-
+    <div class="axiomLogo">
+      <h5>Axiom Protect 2.0</h5>
+    </div>
+<!-- 
     <a href="https://www.miniorange.com/">
       <img src="https://www.miniorange.com/images/logo/miniorange-logo.webp" class="menu-logo" height="45px" alt="miniOrange - Secure IT Right">
-    </a>
+    </a> -->
 
     <div class="menu-nav">
       <div id="products" class="header-level-1-dropdown">
-        <span class="dropbtn">Products&nbsp;<i class="fas fa-angle-down"></i></span>
+        <!-- <span class="dropbtn">Products&nbsp;<i class="fas fa-angle-down"></i></span> -->
         <div class="header-level-2-dropdown-content">   
           <div class="row">
             <div class="col-md-3 col-xs-12">
@@ -460,7 +449,7 @@
       </div>
 
       <div id="solutions" class="header-level-1-dropdown">
-        <span class="dropbtn">Solutions&nbsp;<i class="fas fa-angle-down"></i></span>
+        <!-- <span class="dropbtn">Solutions&nbsp;<i class="fas fa-angle-down"></i></span> -->
         <div class="header-level-2-dropdown-content">   
           <div class="row">
             <div class="col-md-3 col-xs-12">
@@ -618,7 +607,7 @@
       </div>
 
       <div id="integration" class="header-level-1-dropdown">
-        <span class="dropbtn">Integrations&nbsp;<i class="fas fa-angle-down"></i></span>
+        <!-- <span class="dropbtn">Integrations&nbsp;<i class="fas fa-angle-down"></i></span> -->
         <div class="header-level-2-dropdown-content">   
           <div class="row">
             <div class="col-xs-12 header-intg-col">
@@ -1014,11 +1003,11 @@
       </div>
 
       <div id="pricing" class="header-level-1-dropdown">
-        <a href="https://www.miniorange.com/iam/pricing"><span class="dropbtn">Pricing</span></a>
+        <!-- <a href="https://www.miniorange.com/iam/pricing"><span class="dropbtn">Pricing</span></a> -->
       </div>
 
       <div id="resources" class="header-level-1-dropdown">
-        <span class="dropbtn">Resources&nbsp;<i class="fas fa-angle-down"></i></span>
+        <!-- <span class="dropbtn">Resources&nbsp;<i class="fas fa-angle-down"></i></span> -->
         <div class="header-level-2-dropdown-content">   
           <div class="row">
             <div class="col-md-9 menu-left-section">
@@ -1166,14 +1155,14 @@
       </div>
 
       <div id="partners" class="header-level-1-dropdown">
-        <a href="https://www.miniorange.com/iam/partners"><span class="dropbtn">Partners</span></a>
+        <!-- <a href="https://www.miniorange.com/iam/partners"><span class="dropbtn">Partners</span></a> -->
       </div>
     </div>
 
-    <div class="menu-btn">
+    <!-- <div class="menu-btn">
       <a href="https://www.miniorange.com/iam/free-trial" target="_blank" class="primary-btn">Free Trial</a>
       <a href="https://www.miniorange.com/contact" class="secondary-btn"><b>Contact Us</b></a>
-    </div>
+    </div> -->
 
   </nav>
 
@@ -1201,10 +1190,9 @@
     addContactInfo()
   }
 
-  function addContactInfo() {
-  0 == $(".appended-contact-info").length && $(".menu-nav").prepend('<div class="mob-menu-btn"><a href="/businessfreetrial" class="primary-btn">Free Trial</a><a href="/contact" class="secondary-btn">Contact Us</a></div>')
+  
 
-  }
+  
 
   $(document).ready(function() {
     $flag = 0, $window_width = $(window).width(), $flag = adjustMenu($flag), $(window).resize(function() {
@@ -1768,7 +1756,7 @@
 </script>
 
 <div class='col-md-3 left-nav-section'> 
-								<div class='right-section admin-hb-nav nav-sticky left-section' style='overflow-y: auto;max-height: 600px;'>
+								<div class='right-section admin-hb-nav nav-sticky left-section' style='overflow-y: auto;max-height: 600px;   background-color: transparent; '>
 									<b><h2 class='contents-heading'>Contents</h2></b>
 									<hr>
 									<ul class='left-nav-list'>
@@ -1913,6 +1901,120 @@
 </div>
 </div>
 <!-- footer section-->
+<!-- <footer id="footerId" class="footer-main-container">
+	<nav class="footer-main">
+		<div class="footer-container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12">
+
+					<div class="col-md-3 col-xs-12 col-sm-12">
+						<img class="mo-footer" src="https://www.miniorange.com/images/footer/miniorange-white.webp" alt="miniorange logo"><br>
+						<div class="left-most-outer-containe margin-top-1">
+							<div class="margin-top-1">
+								<div class="footer-inner-phone-details">
+									<span class="fa fa-phone"></span>
+								</div>
+								<div>
+									<p class="footer-phone-text">+1 978 658 9387 (US)<br>+91 97178 45846 (India)</p>
+								</div>
+							</div>
+
+							<div>
+								<div class="footer-email-details">
+									<span class="fa fa-envelope"></span>
+								</div>
+								<div class="footer-email-text">
+									<p><a href="mailto:info@xecurify.com">info@xecurify.com</a></p>
+								</div>
+							</div>
+
+						
+
+							<div class="margin-top-1">			
+								<h4 class="footer-stay-connected margin-top-1">STAY CONNECTED</h4>
+								<a href="https://www.linkedin.com/company/miniorange" title="Linkedin"  rel="noreferer, noopener" target="_blank" class="social-icon-color" style="text-decoration:none;">
+								<span class="fa-stack social-icon-outer-font"> <i class="fa fa-stack-2x"></i> <i class="fab fa-linkedin-in fa-stack-1x footer-social-icon-font"></i> </span></a>
+	
+								<a href="https://www.youtube.com/channel/UCxQuL2JNo8HA4baZSIjcgRg" title="YouTube"  rel="noreferer, noopener" target="_blank" class="social-icon-color" style="text-decoration:none;">
+								<span class="fa-stack social-icon-outer-font"> <i class="fa fa-stack-2x"></i> <i class="fab fa-youtube fa-stack-1x footer-social-icon-font"></i> </span></a>
+
+								<a href="https://twitter.com/miniOrange_Inc" title="Twitter" target="_blank"  rel="noreferer, noopener" class="social-icon-color" style="text-decoration:none;">
+								<span class="fa-stack social-icon-outer-font"> <i class="fa fa-stack-2x"></i> <i class="fab fa-twitter fa-stack-1x footer-social-icon-font"></i> </span></a>
+
+								<a href="https://www.facebook.com/miniorangeinc/" title="Facebook"  rel="noreferer, noopener" target="_blank" class="social-icon-color" style="text-decoration:none;">
+								<span class="fa-stack social-icon-outer-font"> <i class="fa fa-stack-2x"></i> <i class="fab fa-facebook-f fa-stack-1x footer-social-icon-font"></i> </span></a>	
+							</div>
+						</div>
+					</div><br>
+
+					<div class="col-md-9 col-xs-12 col-sm-12">
+						<div class="col-md-4">
+							<p class="footer-item-heading">Product</p>
+							<ul class="footer-main-sub-items">
+								<li><a href="https://www.miniorange.com/products/single-sign-on-sso">Single Sign-On</a></li>
+								<li><a href="https://www.miniorange.com/products/identity-broker-service">Identity Brokering</a></li>
+								<li><a href="https://www.miniorange.com/products/two-factor-authentication-(2fa)">Two-factor Authentication</a></li>
+								<li><a href="https://www.miniorange.com/products/privileged-access-management-pam">Privileged Access Management</a></li>
+								<li><a href="https://www.miniorange.com/iam/solutions/risk-based-authentication-rba">Risk Based Authentication</a></li>
+								<li><a href="https://www.miniorange.com/products/user-lifecycle-management">User Lifecycle Management</a></li>
+								<li><a href="https://www.miniorange.com/products/directory-services">Directory Services</a></li>
+								<li><a href="https://www.miniorange.com/products/oauth2-server">OAuth / OpenID Connect Server</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<p class="footer-item-heading">Solutions</p>
+							<ul class="footer-main-sub-items">
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=sso">SSO Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=mfa">2FA Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=mobileapps">Mobile Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=provisioning">Provisioning Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=windows">Windows Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=accessrestriction">Adaptive MFA Solutions</a></li>
+								<li><a href="https://www.miniorange.com/iam/integrations/?id=directories">Directory Integrations</a></li>
+								
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<p class="footer-item-heading">Company
+							<ul class="footer-main-sub-items">
+								<li><a href="https://www.miniorange.com/about_us">About Us</a></li>
+								<li><a href="https://www.miniorange.com/iam/why-miniorange/" target="_blank">Why miniOrange</a></li>
+								<li><a href="https://www.miniorange.com/customers">Customers</a></li>
+								<li><a href="https://www.miniorange.com/iam/partners" target="_blank">Partners</a></li>
+								<li><a href="https://www.miniorange.com/newsandevents">News</a></li>
+								<li><a href="https://www.miniorange.com/career">Careers</a></li>
+								<li><a href="https://www.miniorange.com/contact">Contact Us</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-2">
+							<p class="footer-item-heading">Resources</p>
+							<ul class="footer-main-sub-items">
+								<li><a href="https://blog.miniorange.com/" target="_blank">Blogs</a></li>
+								<li><a href="https://www.youtube.com/channel/UCxQuL2JNo8HA4baZSIjcgRg" target="_blank">Videos</a></li>
+								<li><a href="https://faq.miniorange.com/" target="_blank">FAQs</a></li>
+								<li><a href="https://forum.miniorange.com/" target="_blank">Forum</a></li>
+								<li><a href="https://developers.miniorange.com/docs/idp/" target="_blank">API Docs</a></li>
+								<li><a href="https://www.miniorange.com/terms-and-policies/privacy-policy" target="_blank">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>	
+	</nav>
+
+	<section class="mo-footer-bottom-info">
+		<div class="footer-container text-center">
+			<span> &copy; Copyright &nbsp;2024&nbsp;  miniOrange Security Software Pvt Ltd. All Rights Reserved. &nbsp<a href="https://www.miniorange.com/disclaimer" target="_blank" class="social-icon-color disclaimer-text">Disclaimer </a></span>
+		</div>
+	</section>
+	<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+
+</footer> -->
 
 <!-- javascript -->
 <!-- Placed at the end of the document so the pages load faster -->
