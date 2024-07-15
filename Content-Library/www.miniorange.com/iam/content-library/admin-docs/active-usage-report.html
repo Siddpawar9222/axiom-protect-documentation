@@ -126,18 +126,7 @@
       <div>
       <!-- <span>Meet us at EIC Conference 2024 Berlin to explore our solutions <a href="https://events.miniorange.com/pages/miniorange-at-eic" target="_blank"><u>Know More</u></a></span> -->
       </div>
-      <div class="up-hd-btns">
-        <a href="tel:+1 978 658 9387 (US)">&nbsp;+1 978 658 9387&nbsp;</a>
-        <a href="https://login.xecurify.com/moas/login"><i class="far fa-user-circle"></i>&nbsp;&nbsp;Login&nbsp;&nbsp;</a>
-        <!-- Search -->
-        <form action="#" method="post" id="headerSearchForm" class="up-hd-btns">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-          <input type="text" id="headerSearchText" placeholder="Search" onkeyup="this.setAttribute('value', this.value);" value="">
-          <button type="submit" class="btn btn-link" id="headerSearchIcon"><i class="fas fa-search"></i></button>
-        </form>
-      </div>
+     
     </div>
   </div>
 
@@ -148,13 +137,13 @@
       </span>
     </div>
 
-    <a href="https://www.miniorange.com/">
+    <!-- <a href="https://www.miniorange.com/">
       <img src="https://www.miniorange.com/images/logo/miniorange-logo.webp" class="menu-logo" height="45px" alt="miniOrange - Secure IT Right">
-    </a>
+    </a> -->
 
     <div class="menu-nav">
       <div id="products" class="header-level-1-dropdown">
-        <span class="dropbtn">Products&nbsp;<i class="fas fa-angle-down"></i></span>
+        <!-- <span class="dropbtn">Products&nbsp;<i class="fas fa-angle-down"></i></span> -->
         <div class="header-level-2-dropdown-content">   
           <div class="row">
             <div class="col-md-3 col-xs-12">
@@ -460,7 +449,7 @@
       </div>
 
       <div id="solutions" class="header-level-1-dropdown">
-        <span class="dropbtn">Solutions&nbsp;<i class="fas fa-angle-down"></i></span>
+        <!-- <span class="dropbtn">Solutions&nbsp;<i class="fas fa-angle-down"></i></span> -->
         <div class="header-level-2-dropdown-content">   
           <div class="row">
             <div class="col-md-3 col-xs-12">
@@ -618,7 +607,7 @@
       </div>
 
       <div id="integration" class="header-level-1-dropdown">
-        <span class="dropbtn">Integrations&nbsp;<i class="fas fa-angle-down"></i></span>
+        <!-- <span class="dropbtn">Integrations&nbsp;<i class="fas fa-angle-down"></i></span> -->
         <div class="header-level-2-dropdown-content">   
           <div class="row">
             <div class="col-xs-12 header-intg-col">
@@ -1014,11 +1003,11 @@
       </div>
 
       <div id="pricing" class="header-level-1-dropdown">
-        <a href="https://www.miniorange.com/iam/pricing"><span class="dropbtn">Pricing</span></a>
+        <!-- <a href="https://www.miniorange.com/iam/pricing"><span class="dropbtn">Pricing</span></a> -->
       </div>
 
       <div id="resources" class="header-level-1-dropdown">
-        <span class="dropbtn">Resources&nbsp;<i class="fas fa-angle-down"></i></span>
+        <!-- <span class="dropbtn">Resources&nbsp;<i class="fas fa-angle-down"></i></span> -->
         <div class="header-level-2-dropdown-content">   
           <div class="row">
             <div class="col-md-9 menu-left-section">
@@ -1166,14 +1155,11 @@
       </div>
 
       <div id="partners" class="header-level-1-dropdown">
-        <a href="https://www.miniorange.com/iam/partners"><span class="dropbtn">Partners</span></a>
+        <!-- <a href="https://www.miniorange.com/iam/partners"><span class="dropbtn">Partners</span></a> -->
       </div>
     </div>
 
-    <div class="menu-btn">
-      <a href="https://www.miniorange.com/iam/free-trial" target="_blank" class="primary-btn">Free Trial</a>
-      <a href="https://www.miniorange.com/contact" class="secondary-btn"><b>Contact Us</b></a>
-    </div>
+   
 
   </nav>
 
@@ -1201,10 +1187,6 @@
     addContactInfo()
   }
 
-  function addContactInfo() {
-  0 == $(".appended-contact-info").length && $(".menu-nav").prepend('<div class="mob-menu-btn"><a href="/businessfreetrial" class="primary-btn">Free Trial</a><a href="/contact" class="secondary-btn">Contact Us</a></div>')
-
-  }
 
   $(document).ready(function() {
     $flag = 0, $window_width = $(window).width(), $flag = adjustMenu($flag), $(window).resize(function() {
@@ -1768,7 +1750,7 @@
 </script>
 
 <div class='col-md-3 left-nav-section'> 
-								<div class='right-section admin-hb-nav nav-sticky left-section' style='overflow-y: auto;max-height: 600px;'>
+								<div class='right-section admin-hb-nav nav-sticky left-section' style='overflow-y: auto;max-height: 600px; background-color: transparent;'>
 									<b><h2 class='contents-heading'>Contents</h2></b>
 									<hr>
 									<ul class='left-nav-list'>
@@ -1917,7 +1899,7 @@
 </div>
 </div>
 <!-- footer section-->
-<footer id="footerId" class="footer-main-container">
+<!-- <footer id="footerId" class="footer-main-container">
 	<nav class="footer-main">
 		<div class="footer-container">
 			<div class="row">
@@ -1944,7 +1926,7 @@
 								</div>
 							</div>
 
-							<button class="btn primary-btn" onclick="location.href='https://www.miniorange.com/contact'">CONTACT US</button><br>
+							
 
 							<div class="margin-top-1">			
 								<h4 class="footer-stay-connected margin-top-1">STAY CONNECTED</h4>
@@ -1988,7 +1970,7 @@
 								<li><a href="https://www.miniorange.com/iam/integrations/?id=windows">Windows Solutions</a></li>
 								<li><a href="https://www.miniorange.com/iam/integrations/?id=accessrestriction">Adaptive MFA Solutions</a></li>
 								<li><a href="https://www.miniorange.com/iam/integrations/?id=directories">Directory Integrations</a></li>
-								<!-- li><a href="/integrations/?id=secure-browser" target="_blank">Secure Browser SSO</a></li> -->
+							
 							</ul>
 						</div>
 
@@ -2030,7 +2012,7 @@
 	</section>
 	<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
-</footer>
+</footer> -->
 
 <!-- javascript -->
 <!-- Placed at the end of the document so the pages load faster -->
