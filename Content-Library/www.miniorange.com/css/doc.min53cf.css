@@ -415,9 +415,11 @@
 }
 
 .left-nav-section {
+    /* height: 100vh; */
     background: linear-gradient(to right top, #0d4990, #566ba9, #8790c3, #b4b8de, #e1e1f9);
     border-right: 2px solid #039be5;
     padding-right: 0
+    
 
     
 }
@@ -448,10 +450,12 @@
 
 .guide-title,
 .no-banner h1 {
+    color: black;
     font-size: 34px !important;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.45
+    
 }
 
 .no-banner {

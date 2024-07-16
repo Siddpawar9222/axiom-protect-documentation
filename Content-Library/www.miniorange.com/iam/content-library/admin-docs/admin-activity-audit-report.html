@@ -1184,14 +1184,7 @@
     $(".appended-contact-info").remove(), $(".appended-search").empty(), $(".gsc-control-cse").css("margin", "0em"), $(".menu").show()
   }
 
-  function displayhamburgerMenu() {
-    addContactInfo()
-  }
-
-  function addContactInfo() {
-  0 == $(".appended-contact-info").length && $(".menu-nav").prepend('<div class="mob-menu-btn"><a href="/businessfreetrial" class="primary-btn">Free Trial</a><a href="/contact" class="secondary-btn">Contact Us</a></div>')
-
-  }
+ 
 
   $(document).ready(function() {
     $flag = 0, $window_width = $(window).width(), $flag = adjustMenu($flag), $(window).resize(function() {
