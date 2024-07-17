@@ -239,7 +239,7 @@
 .left-nav-list .nav-main-heading a {
     color: #ffffff;
     line-height: 1.5;
-    font-size: 1.55rem
+    font-size: 16px;
 }
 
 .left-nav-list .nav-sub-heading a {
@@ -248,6 +248,7 @@
     font-size: 1.4rem;
     padding-left: 20px
 }
+
 
 .active-left-item {
     color: #039be5 !important
@@ -416,6 +417,7 @@
 
 .left-nav-section {
     /* height: 100vh; */
+    width: 19.7%;
     background: linear-gradient(to right top, #0d4990, #566ba9, #8790c3, #b4b8de, #e1e1f9);
     border-right: 2px solid #039be5;
     padding-right: 0
@@ -462,7 +464,8 @@
    position: relative;
    bottom: 100px;
     /* padding-top: 150px; */
-    word-spacing: .1rem
+    word-spacing: .1rem;
+    font-family: "axiom1";
 }
 
 .left-nav-list {
@@ -472,8 +475,9 @@
 .left-nav-list .nav-main-heading a:hover,
 .nav-sub-heading a:hover {
     font-weight: 500;
-    text-decoration: underline;
-    color: #0a84ae !important
+    text-decoration: none;
+    color: #d5d5d5 !important;
+   
 }
 
 .directories-section {
@@ -497,7 +501,8 @@
     letter-spacing: .3px;
     line-height: 2;
     color: #1b1b1b;
-    word-spacing: .1rem
+    word-spacing: .1rem;
+    font-family: 'axiom1';
 }
 
 .directories-section p,
@@ -508,7 +513,9 @@
 
 .breadcrumb-background {
     background-color: #fff !important;
-    padding: 5px 0
+    padding: 5px 0;
+    display: none;
+    
 }
 
 .breadcrumb li {
@@ -517,11 +524,11 @@
 }
 
 a {
-    color: #0a84ae
+    color: #d5d5d5
 }
 
 a:hover {
-    color: #053b4e;
+    color: #d5d5d5;
     text-decoration: none
 }
 
@@ -644,7 +651,9 @@ a:hover {
     }
 
     .no-banner {
-        padding-top: 180px !important
+        padding-top: 180px !important;
+      
+        
     }
 
     .copy-code-button {
