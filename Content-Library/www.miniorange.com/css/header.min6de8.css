@@ -1,6 +1,7 @@
 .header {
     height: 105px;
-    display: block
+    display: block;
+    background: linear-gradient(to left top, #b4b8de, #e1e1f9);
 }
 
 .mini-logo {
