@@ -1,24 +1,24 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.miniorange.com/iam/content-library/admin-docs/adaptive-authentication-report by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jul 2024 04:36:23 GMT -->
+<!-- Mirrored from www.miniorange.com/iam/content-library/admin-docs/active-usage-report by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jul 2024 04:36:22 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8">
-<title>Adaptive Authentication Report | miniOrange</title>
+<title>Types of Report</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Adaptive Authentication Report" />
-<meta property="og:title" content="Adaptive Authentication Report | miniOrange Identity Platform Admin Handbook" />
+<meta name="description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Active Usage Summary" />
+<meta property="og:title" content="Active Usage Summary | miniOrange Identity Platform Admin Handbook" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="adaptive-authentication-report.html" />
+<meta property="og:url" content="active-usage-report.html" />
 <meta property="og:image" content="https://www.miniorange.com/" />
-<meta property="og:description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Adaptive Authentication Report" />
-<meta name="twitter:card" content="Report" />
-<meta name="twitter:title" content="Adaptive Authentication Report | miniOrange Identity Platform Admin Handbook" />
-<meta name="twitter:description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Adaptive Authentication Report" />
+<meta property="og:description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Active Usage Summary" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Active Usage Summary | miniOrange Identity Platform Admin Handbook" />
+<meta name="twitter:description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Active Usage Summary" />
 <meta name="twitter:image" content="https://www.miniorange.com/" />
-<meta name="twitter:url" content="adaptive-authentication-report.html">
-<link rel="canonical" href="adaptive-authentication-report.html" />
+<meta name="twitter:url" content="active-usage-report.html">
+<link rel="canonical" href="active-usage-report.html" />
 
 <meta name="DC.title" content="miniOrange Identity and Access Management" />
 <meta name="geo.region" content="US-CA" />
@@ -127,7 +127,7 @@
         <div>
         <!-- <span>Meet us at EIC Conference 2024 Berlin to explore our solutions <a href="https://events.miniorange.com/pages/miniorange-at-eic" target="_blank"><u>Know More</u></a></span> -->
         </div>
-        
+       
       </div>
     </div>
   
@@ -1003,7 +1003,9 @@
           </div>
         </div>
   
-        
+        <div id="pricing" class="header-level-1-dropdown">
+          <!-- <a href="https://www.miniorange.com/iam/pricing"><span class="dropbtn">Pricing</span></a> -->
+        </div>
   
         <div id="resources" class="header-level-1-dropdown">
           <!-- <span class="dropbtn">Resources&nbsp;<i class="fas fa-angle-down"></i></span> -->
@@ -1153,7 +1155,9 @@
           </div>
         </div>
   
-        
+        <div id="partners" class="header-level-1-dropdown">
+          <!-- <a href="https://www.miniorange.com/iam/partners"><span class="dropbtn">Partners</span></a> -->
+        </div>
       </div>
   
      
@@ -1181,6 +1185,9 @@
     $(".appended-contact-info").remove(), $(".appended-search").empty(), $(".gsc-control-cse").css("margin", "0em"), $(".menu").show()
   }
 
+  function displayhamburgerMenu() {
+    addContactInfo()
+  }
 
 
   $(document).ready(function() {
@@ -1742,7 +1749,7 @@
 			$(this).children().find('.chevron').toggleClass('chevron-bottom')
 		})
 	});
-</script>
+</script> 
 
 <div class='col-md-3 left-nav-section'> 
 								<div class='right-section admin-hb-nav nav-sticky left-section' style='overflow-y: auto;max-height: 600px; background-color: transparent;'>
@@ -1849,7 +1856,7 @@
 								</div>
 								<div id='Reports' class='panel-collapse collapse in'>
 									<div class='panel-body left-section-collapse-panel-body'>
-										<li class='list-unstyled nav-sub-heading '><a href='reports.html'>Reports</a></li><li class='list-unstyled nav-sub-heading '><a href='active-usage-report.html'>Active Usage Report</a></li><li class='list-unstyled nav-sub-heading '><a href='sso-usage-report.html'>Single Sign On Usage Report</a></li><li class='list-unstyled nav-sub-heading '><a href='user-login-report.html'>User Login Report</a></li><li class='list-unstyled nav-sub-heading '><a href='radius-authentication-report.html'>Radius Authentication Report</a></li><li class='list-unstyled nav-sub-heading '><a href='detailed-authentication-report.html'>Detailed Authentication Report</a></li><li class='list-unstyled nav-sub-heading release-notes-left-navigation-active'><a href='adaptive-authentication-report.html'>Adaptive Authentication Report</a></li><li class='list-unstyled nav-sub-heading '><a href='user-devices-report.html'>User Devices Report</a></li><li class='list-unstyled nav-sub-heading '><a href='user-registration-report.html'>User Registration Report</a></li><li class='list-unstyled nav-sub-heading '><a href='provisioning-report.html'>Provisioning Report</a></li><li class='list-unstyled nav-sub-heading '><a href='admin-activity-audit-report.html'>Admin Activity Audit Report</a></li>
+										<li class='list-unstyled nav-sub-heading '><a href='reports.html'>Reports</a></li><li class='list-unstyled nav-sub-heading release-notes-left-navigation-active'><a href='active-usage-report.html'>Active Usage Report</a></li><li class='list-unstyled nav-sub-heading '><a href='sso-usage-report.html'>Single Sign On Usage Report</a></li><li class='list-unstyled nav-sub-heading '><a href='user-login-report.html'>User Login Report</a></li><li class='list-unstyled nav-sub-heading '><a href='radius-authentication-report.html'>Radius Authentication Report</a></li><li class='list-unstyled nav-sub-heading '><a href='detailed-authentication-report.html'>Detailed Authentication Report</a></li><li class='list-unstyled nav-sub-heading '><a href='adaptive-authentication-report.html'>Adaptive Authentication Report</a></li><li class='list-unstyled nav-sub-heading '><a href='user-devices-report.html'>User Devices Report</a></li><li class='list-unstyled nav-sub-heading '><a href='user-registration-report.html'>User Registration Report</a></li><li class='list-unstyled nav-sub-heading '><a href='provisioning-report.html'>Provisioning Report</a></li><li class='list-unstyled nav-sub-heading '><a href='admin-activity-audit-report.html'>Admin Activity Audit Report</a></li>
 									<div/>
 								</div>
 							</div>
@@ -1867,37 +1874,218 @@
         <li><a href="https://www.miniorange.com/iam/content-library">Content Library</a></li>
         <li><a href="index.html">Admin Docs</a></li>
         <li><a href="reports.html">Reports</a></li>
-        <li>Adaptive Authentication Report</li>
+        <li>Active Usage Report</li>
       </ul>
  <!-- Breadcrumb Ends -->
 
-<h1 class="listas-main">Adaptive Authentication Report</h1><hr>
+<!-- <h1 class="listas-main">User Report</h1><hr>
 
 <ul class="authen_sub_bullets">
-    <li>This report shows the details related to adaptive authentications enabled for the users. The admin can check the status of the adaptive authentication for a user login along with the user login attributes for the login session and the type of adaptive authentication prompted to the user.</li>
-    <li>Go to <b>Reports &gt;&gt; </b><strong>Adaptive Authentication Report.</strong></li>
-    <li>You will have to provide the following details to get a report result</li>
+    <li>This report shows the breakdown of the authentication or SSO actions performed by each user along with their date and status. Use this report to get a high level overview of the actions performed by the user.</li>
+    <li>This report gives you a quick overview of the authentication or SSO operations performed by each or all end users for the selected time period.</li>
+    <li>Go to <b>Reports &gt;&gt; Active Usage Report</b></li>
+    <li>Enter the User Identifier like email or username, from and to dates and then click on the Search button. To get reports for all users do not enter any User Identifier and leave it blank.</li>
+    <img loading="lazy" src="../../../images/reports/user-report-page.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Active users"><br><br>
+    <li>You can also click on the Get Count button to get the user count for current search criteria instead of the report.</li>
+    <li>In the Report Result section, you will be able to see the users details along with the applications and the status of the authentication.</li>
+    <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/active-usage-report.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: User login report"><br><br>
+    <li>Along with the user authentication details, the following details are shown :</li>
     <ol class="authen_sub_bullets">
-        <li>End User Email</li>
-        <li>Start and End Date</li>
-        <li>Type of Action : Can be Allow, Deny and Challenge</li>
-        <li>Did User Register when Prompted? : If passed this only shows the results where the user has registered a device profile.</li>
+        <li> Total number of transactions performed by all of the users and also the</li>
+        <li>Total usage Count which is the total number of active users. This number represents the consumed user licenses from your account license.</li>
     </ol>
-    <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/reports-adaptive-authentication.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Adaptive authentication"><br><br>
-    <li>In the report result you will be able to see the user details along with the adaptive authentication attributes and the user session attributes such as the IP address and the location.</li>
-    <li>You can also export the report in PDF or CSV format by clicking on the respective buttons present at the top-right of the reports section.</li>
-    <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/adaptive-authentication-report.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Adaptive authentication reports"><br><br>
-    <li>You can click on the ‘Customize Column’ button to view additional attributes from the report result.</li>
-    <li>You can click on the icon beside the username to view the ‘Fraud Prevention Summary’.</li>
-    <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/fraud-prevention-summary.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Adaptive authentication reports"><br><br>
 </ul>
+<br><br> -->
 
-<br><br>
+
+ <h1 class="listas-main">Types of Report</h1><hr>
+
+ <section id="user-reports">
+  <h3 style="color: black;">User Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/user-report-page.png" class="img_size" alt="User Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="application-reports">
+  <h3 style="color: black;">Application Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/application-report-page.png" class="img_size" alt="Application Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="operator-reports">
+  <h3 style="color: black;">Operator Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/opertor-report.png" class="img_size" alt="Operator Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="auth-reports">
+  <h3 style="color: black;">Auth Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/authentication-report.png" class="img_size" alt="Auth Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="tokenization-reports">
+  <h3 style="color: black;">Tokenization Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/Tokenization-Report.png" class="img_size" alt="Tokenization Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="device-reports">
+  <h3 style="color: black;">Device Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/Device-Reports.png" class="img_size" alt="Device Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="push-reports">
+  <h3 style="color: black;">Push Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/PushReports.png" class="img_size" alt="Push Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="rba-reports">
+  <h3 style="color: black;">RBA Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/RBAReports.png" class="img_size" alt="RBA Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="otp-token-reports">
+  <h3 style="color: black;">OTP Token Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/OTPTokenReports.png" class="img_size" alt="OTP Token Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="onboarding-reports">
+  <h3 style="color: black;">Onboarding Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/OnboardingReports.png" class="img_size" alt="Onboarding Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="ekyc-rejection-reports">
+  <h3 style="color: black;">EKYC Rejection Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/EKYCRejectionReport.png" class="img_size" alt="EKYC Rejection Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="csd-application-reports">
+  <h3 style="color: black;">CSD Application Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/CSDApplicationReports.png" class="img_size" alt="CSD Application Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="suspicious-reports">
+  <h3 style="color: black;">Suspicious Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/SuspiciousReport.png" class="img_size" alt="Suspicious Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="ekyc-frr-reports">
+  <h3 style="color: black;">EKYC FRR Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/BKRPerformanceReport.png" class="img_size" alt="EKYC FRR Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="ekyc-far-reports">
+  <h3 style="color: black;">EKYC FAR Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/BKREKYCCheckReport.png" class="img_size" alt="EKYC FAR Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="3rd-party-reports">
+  <h3 style="color: black;">3rd Party Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/ThirdPartyAuditReport.png" class="img_size" alt="3rd Party Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="audit-trail-reports">
+  <h3 style="color: black;">Audit Trail Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/AuditTrail.png" class="img_size" alt="Audit Trail Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="message-reports">
+  <h3 style="color: black;">Message Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/MessageReport.png" class="img_size" alt="Message Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="curator-reports">
+  <h3 style="color: black;">Curator Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/CuratorReport.png" class="img_size" alt="Curator Report">
+  </ul>
+  <br><br>
+</section>
+
+<section id="curator-auth-reports">
+  <h3 style="color: black;">Curator Auth Report</h3>
+  <hr>
+  <ul class="authen_sub_bullets">
+      <img loading="lazy" src="../../../images/reports/CuratorAuthenticationReports.png" class="img_size" alt="Curator Auth Report">
+  </ul>
+  <br><br>
+</section>
+
+
+
 </div>
 </div>
 </div>
 <!-- footer section-->
-
 
 <!-- javascript -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -1977,6 +2165,6 @@
 <!-- /.footer -->
 </body>
 
-<!-- Mirrored from www.miniorange.com/iam/content-library/admin-docs/adaptive-authentication-report by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jul 2024 04:36:23 GMT -->
+<!-- Mirrored from www.miniorange.com/iam/content-library/admin-docs/active-usage-report by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jul 2024 04:36:22 GMT -->
 </html>
 
