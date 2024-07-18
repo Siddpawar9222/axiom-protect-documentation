@@ -658,7 +658,7 @@
 	}
 
 	.release-notes-left-navigation-active a{
-		color: #0a84ae!important;
+		color: #d5d5d5!important;
 	}
 
 	.release-notes-left-section-collapse-heading{
@@ -788,12 +788,12 @@
 						<div class='panel-group'>
 							<div class='panel panel-default release-notes-left-section-collapse-panel'>
 								<div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#Manage_Groups' >
-									<span>Manage Groups</span>
+									<span>Operators</span>
 									<span class='chevron chevron-bottom csr-ptr'></span>
 								</div>
 								<div id='Manage_Groups' class='panel-collapse collapse'>
 									<div class='panel-body left-section-collapse-panel-body'>
-										<li class='list-unstyled nav-sub-heading '><a href='manage-groups.html'>Manage Groups</a></li><li class='list-unstyled nav-sub-heading '><a href='group-custom-fields.html'>Group Custom Fields</a></li><li class='list-unstyled nav-sub-heading '><a href='group-membership-custom-fields.html'>Group Membership Custom Fields</a></li><li class='list-unstyled nav-sub-heading '><a href='auto-assign-group-rules.html'>Auto Assign Group Rules</a></li>
+										<li class='list-unstyled nav-sub-heading '><a href='manage-groups.html'>Operators</a></li><li class='list-unstyled nav-sub-heading '><a href='group-custom-fields.html'>Import Bulk operators</a></li><li class='list-unstyled nav-sub-heading '><a href='group-membership-custom-fields.html'>Teams</a></li><li class='list-unstyled nav-sub-heading '><a href='auto-assign-group-rules.html'>Import Bulk Teams</a></li>
 									<div/>
 								</div>
 							</div>
@@ -842,79 +842,21 @@
 <!-- Breadcrumb Ends -->
 
 <h1 class="listas-main">How to add a Custom App</h1><hr>
+ 
 <ul class="authen_sub_bullets">
-    <li>Click on <b>Add Custom App</b></li>
-    <li>Configure your app. Add <b>application name</b> and <b> Login page URL</b>. Select Type as <b>SIMPLE_LOGIN</b>. (Refer the table below for more information)</li>
-    <table class="table table-bordered table-striped">
-        <tbody>
-        <tr>
-        <td><b>App Type</b></td>
-        <td><b>Description</b></td>
-        </tr>
-        <tr>
-        <td>SIMPLE LOGIN</td>
-        <td>When its a Simple form with Username, password and a button to Login</td>
-        </tr>
-        <tr>
-        <td>LOGIN_WITH_DOMAIN</td>
-        <td>When along with username and password, there is another field that requires input (constant like account id or domain)</td>
-        </tr>
-        <tr>
-        <td>LOGIN_AFTER_CLICK</td>
-        <td>When the login form loads after a button click only.</td>
-        </tr>
-        <tr>
-        <td>LOGIN_SECOND_PAGE</td>
-        <td>When username and password are on separate pages.</td>
-        </tr>
-        <tr>
-        <td>LOGIN_WITH_PRE_CLICK</td>
-        <td>When a click is required before submitting the form.</td>
-        </tr>
-        </tbody>
-    </table>
-    <li>Add QuerySelectors for Username, Password and Sign-in/Login Button. (Click here to learn more about QuerySelectors)</li>
-    <li>Your App is now added to the List</li>
-  </ul>
+	<li>Go to <b>Apps</b> Click on <b>New Application</b> button.</li>
+	<img loading="lazy" src="../../../images/app-images/App-home.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Add Application"><br><br>
+	<li>click on <b>CUSTOM</b> as Application type.</li>
+	<img loading="lazy" src="../../../images/app-images/custom-2.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Radius app type"><br><br>
+	<li>Configure the below details in <b>General App Settings</b> to add Custom Client.</li>
+	<img loading="lazy" src="../../../images/app-images/custom-info.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
 
-  <p><b>Activate the App</b></p>
-  <ul class="authen_sub_bullets"> 
-    <li>Select your required application from the list</li>
-    <li>Select <b>Group name</b> as <b>default</b>.(This will allow all your added groups to access this service)</li>
-    <li>If each user has a different username and password for the app, admin should choose an <b>Individual Login Account</b> option, so that users can save their username and password from the user portal themselves.</li>
-    <li>If multiple users are allowed to access the app via the same credentials assigned by admin, admin should choose <b>share Login Account</b> option.</li>
-    <li>Select your login type and click on the <b>Save</b> button.</li>
-    <li>For a Shared login account, click on <b>Select &gt;&gt; Add credentials to Application</b>, in the action menu against your app.</li>
-    <li>Set the credentials and click <b>Save</b>.</li>
-  </ul>
+  
 
-  <p><b>Configure Login Credentials</b></p>
-  <ul class="authen_sub_bullets">
-    <li>Go to the miniOrange dashboard and select <b>User Dashboard</b> from the right side menu.</li>
-    <li>Scroll down on the same page under the <b>Configure your Cloud Apps</b> section and search for your app.</li>
-    <li>On your app icon, you will find a setting option. Click on it and select <b>Configure</b>.</li>
-    <li>Enter your <b>Username</b> and <b>Password</b> in the popup.</li>
-    <li>Click on Save to securely store your credentials.</li>
-  </ul>
+ 
 
-  <p><b>Download and Install Browser Extension.</b></p>
-  <ul class="authen_sub_bullets">
-    <li>Scroll up on the same page, under the <b>SIGN-IN TO YOUR FAVOURITE CLOUD APPS</b> section and search for your app.</li>
-    <li>On <b>your app</b> icon, click on the <b>download symbol</b> .</li>
-    <li>You can download the ‘miniOrange Secure Single Sign-on Plug in’ For the following browsers-</li>
-        <ol>
-            <li>Chrome</li>
-            <li>Firefox</li>
-            <li>Safari</li>
-            <li>Internet Explorer</li>
-        </ol>
-  </ul>
+  
 
-  <p><b>Login to your Application via Configured App.</b></p>
-  <ul class="authen_sub_bullets">
-    <li>Click on the configured app in your user-dashboard to Login to your application.</li>
-    <li>You will be redirected to your Application's Login page.</li>
-  </ul>
 
 <br><br>
 </div>

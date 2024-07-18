@@ -658,7 +658,7 @@
 	}
 
 	.release-notes-left-navigation-active a{
-		color: #0a84ae!important;
+		color: #d5d5d5!important;
 	}
 
 	.release-notes-left-section-collapse-heading{
@@ -788,12 +788,12 @@
 						<div class='panel-group'>
 							<div class='panel panel-default release-notes-left-section-collapse-panel'>
 								<div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#Manage_Groups' >
-									<span>Manage Groups</span>
+									<span>Operators</span>
 									<span class='chevron chevron-bottom csr-ptr'></span>
 								</div>
 								<div id='Manage_Groups' class='panel-collapse collapse'>
 									<div class='panel-body left-section-collapse-panel-body'>
-										<li class='list-unstyled nav-sub-heading '><a href='manage-groups.html'>Manage Groups</a></li><li class='list-unstyled nav-sub-heading '><a href='group-custom-fields.html'>Group Custom Fields</a></li><li class='list-unstyled nav-sub-heading '><a href='group-membership-custom-fields.html'>Group Membership Custom Fields</a></li><li class='list-unstyled nav-sub-heading '><a href='auto-assign-group-rules.html'>Auto Assign Group Rules</a></li>
+										<li class='list-unstyled nav-sub-heading '><a href='manage-groups.html'>Operators</a></li><li class='list-unstyled nav-sub-heading '><a href='group-custom-fields.html'>Import Bulk operators</a></li><li class='list-unstyled nav-sub-heading '><a href='group-membership-custom-fields.html'>Teams</a></li><li class='list-unstyled nav-sub-heading '><a href='auto-assign-group-rules.html'>Import Bulk Teams</a></li>
 									<div/>
 								</div>
 							</div>
@@ -843,133 +843,21 @@
 
 <h1 class="listas-main">How to add a SAML App</h1><hr>
 
-<p>miniOrange supports Single Sign-on into your apps, to securely login for admins and users. miniOrange supports several different protocols for your applications, such as 
-<b>SAML</b>, <b>WS-FED</b>, <b>OAuth</b>, <b>OIDC</b>, <b>JWT</b>, <b>RADIUS,</b> etc. Using Single Sign-on, users can use one set of credentials to login to multiple applications. This improves security, as it reduces avenues for phishing attacks, and also improves access to your application.
-</p>
-<p>Security Assertion Markup Language (SAML) is an XML standard that allows secure web domains to exchange user authentication and authorization data. Using SAML, an online service provider (SP) can contact a separate online identity provider to authenticate users who are trying to access secure content. miniOrange provides a solution to perform single sign-on (SSO) for applications supporting SAML protocol, like AWS, WordPress,  Atlassian, Dropbox Enterprise, moodle, SAP, Zoho, zendesk, etc. The steps to configure SSO settings for SAML applications on miniOrange are as follows.</p><br>
-
-<h4><b>Configure Single Sign-On (SSO) Settings for SAML Apps:</b></h4><br>
 
 <ul class="authen_sub_bullets">
- <li>Login into miniOrange Admin Console.</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/dashboard-apps.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Dashboard applications"><br><br>
- <li>Go to <b>Apps &gt; Add Application</b> button.</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/add-application.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Add application"><br><br>
- <li>In <b>Choose Application Type</b> click on<b> Create App</b> button in SAML/WS-FED application type.</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/select-saml-app.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: select SAML application"><br><br>
- <li>In the next step, search for your application from the list, if your application is not found. Search for <b>"custom"</b> and you can set up your app via Custom SAML App.</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/custom-app.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search custom applciation"><br><br>
- <li>In the <b>Basic Settings</b> tab, import the SP metadata by clicking on the <b>Import SP metadata</b> button.</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/import-sp-metadata.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Import SP Metadata"><br><br>
- <li>Enter the <b>app name</b> as per your preference and click on <b>File</b> if you have a metadata file or the URL if you have the application’s metadata URL. You will be able to get both information from your application.</li>
- <li>After choosing the appropriate option click on <b>Import</b>.</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/import.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Import"><br><br>
+	<li>Go to <b>Apps</b> Click on <b>New Application</b> button.</li>
+	<img loading="lazy" src="../../../images/app-images/App-home.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Add Application"><br><br>
+	<li>click on <b>Single Sign-On</b> as Application type.</li>
+	<img loading="lazy" src="../../../images/app-images/sso-3.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Radius app type"><br><br>
+	<li>Click on <b>SAML2.0</b> to add SAML Client.</li>
+	<img loading="lazy" src="../../../images/app-images/saml-1.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
+	<li>Configure the below details in <b>General App Settings</b> to add SAML Client.</li>
+	<img loading="lazy" src="../../../images/app-images/saml-info.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
 
- <table class="table table-bordered table-striped table-responsive">
- <tr><td><b>URL</b></td><td>You get the URL for Metadata information from the Service Provider, you can directly add this URL in the input field provided</td></tr>
- <tr><td><b>Text</b></td><td>When you select <u>Text</u> option, you will have to fill all the attributes manually</td></tr>
- <tr><td><b>File</b></td><td>When you select File option, you can directly upload the XML file containing all the information.</td></tr>
- </table>
 
- <li>Here is a description of what each field under the <b>Basic Settings</b> section means.</li>
-   <ul class="authen-sub-points">
-        <li><b>SP Entity ID</b> is used to identify your app against the SAML request received from SP. The SP Entity ID or Issuer can be in either URL or in String format. </li>
-        <li><b>ACS URL</b> or <b>Assertion Consumer Service URL</b> defines where the SAML Assertion should be sent after authentication. Make sure the <b>ACS URL </b>is in the format: <code class="code-style">https://www.domain-name.com/a/[domain_name]/acs.</code></li>
-        <li><b>Audience URI,</b> as the name suggests, specifies the valid audience for SAML Assertion. It is usually the same as <b>SP Entity ID</b>. If <b>Audience URI</b> is not specified separately by SP, leave it blank.</li> <li><b>Single Logout URL</b> - The URL where you want the logout request to be consumed and where your users should be redirected after single logout from the applications.</li>
-        <li><b>Single Logout URL</b> - The URL where you want the logout request to be consumed and where your users should be redirected after single logout from the applications.</li></ul>
- <li>Click <b>Next</b>, to go to the <b>Attribute Mapping</b> page. Here you can add and configure the attributes to be sent to the app.</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/add-attribute.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Add attributes"><br><br>
-<li>Here is a description of what each field under the <b>Attribute Mapping</b> section means</li>
-<ul class="authen-sub-points">
-  <li><b>NameID</b> defines what SP is expecting in the subject element of SAML Assertion. Generally, NameID is Username of Email Address</li>
-  <li><b>NameID format</b> defines the format of subject element content, i.e. <b>NameID</b>.
-  For example, Email Address NameID format defines that the NameID is in the form of an email address, specifically “addr-spec”. An addr-spec has the form local-part@domain, has no phrase (such as a common name) before it, has no comment (text surrounded in parentheses) after it, and is not surrounded by “&lt;” and “&gt;”.
-  If <b>NameID format</b> is not externally specified by SP, leave it unspecified.</li>
-  <li>You can <b>Add Attributes</b> to be sent in SAML Assertion to SP. The attributes include user’s profile attributes such as first name, last name, full name, username, email, custom profile attributes, and user groups, etc.</li></ul>
- <li>In <b>Login policy</b>, you can choose the specific group of users from the dropdown for which you want to enable the policy. Provide a <b>policy name</b> and you can enable either <b>2 Factor Authentication (MFA)</b> or <b>Adaptive Authentication.</b></li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/login-policy.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: edit login policy"><br><br>
-<li>Select a <b>Group Name</b> from the dropdown – the group which should have access to the SAML SSO using this app.</li>
-<li>Give a policy name for Custom App in <b>Policy Name.</b></li>
-<li>Select the <b>Login Method Type</b> for authentication like Password, Mobile, etc.</li>
-<li>Enable <b>2 Factor/Adaptive</b> for authentication if required.</li>
-<li>Click on <b>Save </b>button to add policy for Apps (Single Sign-On).</li>
- <li>In<b> Advanced settings</b>, you can configure the following settings -</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/advanced-settings.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: edit advanced settings"><br><br>
 
-<table class="table table-striped table-bordered">
-<tbody>
-<tr>
-<td><b>Relay State</b></td>
-<td>Enter the URL where you want the user to redirect after sign in to the application.</td>
-</tr>
-<tr>
-<td><b>Override Relay state</b></td>
-<td>Enable this to override the default relay state of the SP</td>
-</tr>
-<tr>
-<td><b>Show On End User Dashboard</b></td>
-<td>Disable this if you do not want the app to be visible for all users on end user dashboard</td>
-</tr>
-<tr>
-<td><b>Signed Request</b></td>
-<td>Enable this to sign the request sent by SP to IdP. Provide the X509 certificate or upload the certificate.</td>
-</tr>
-<tr>
-<td><b>Signature Algorithm</b></td>
-<td>Select the algorithm that will be used to sign the SAML request/response.</td>
-</tr>
-<tr>
-<td><b>Encrypt Assertion</b></td>
-<td>Select this if you want to encrypt the assertion in SAML response and provide the algorithm and certificate for encryption.</td>
-</tr>
-<tr>
-<td><b>SAML Authentication Validity Period</b></td>
-<td>The time for which the authentication should be considered valid and the user should be able to perform SSO. After that, the user will have to sign in again.</td>
-</tr>
-<tr>
-<td><b>Add Name Format</b></td>
-<td>Enable this to choose a custom name format based on the SP.</td>
-</tr>
-<tr>
-<td><b>Name Format</b></td>
-<td>Select the format that is supported by the SP.</td>
-</tr>
-<tr>
-<td><b>Identity Source</b></td>
-<td>Select the identity source from where you want the authentication to happen. You will see the list of all configured sources.</td>
-</tr>
-<tr>
-<td><b>Force Authentication</b></td>
-<td>Enable this to enforce authentication on each request to access the application.</td>
-</tr>
-<tr>
-<td><b>Logout Response Binding</b></td>
-<td>A Logout Response is sent in reply to a Logout Request from SP. It could be sent by an Identity Provider or Service Provider.</td>
-</tr>
-<tr>
-<td><b>IdP initiated Logout Request Binding</b></td>
-<td>A Logout Response is sent in reply to a Logout Request from the IdP dashboard. It could be sent by an Identity Provider or Service Provider.
-<ul class="authen_sub_bullets">
-  <li>HTTP Redirect - A Logout Response with its Signature</li>
-  <li>HTTP POST - A Logout Response with the signature embedded</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
 
-<li>Click on <b>Save</b>. Your application is saved successfully.</li>
-</ul><br>
-<h4><b>Configure Service Provider (SP)</b></h4><br>
-<ul class="authen_sub_bullets">
-  <li>From the list of Apps configured, you can locate the app you created, you can see the <b>Select &gt;&gt; Metadata</b> option present in front of that specific app.</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/select-metadata.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: select metadata"><br><br>
-  <li>On the Metadata page, click on <b>Show Metadata Details</b> and choose either of the two Metadata options:</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/show-metadata-details.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: show metadata details"><br><br>
-  <li>If you want to use <b>miniOrange as a User-Store</b> i.e., your user identities will be stored in miniOrange then download the metadata file under the heading '<b>INFORMATION REQUIRED TO SET miniOrange AS IDP</b>'.</li>
-  <li>If you want to authenticate your users via any <b>external Identity Provider</b> like Active Directory, Okta, OneLogin, etc then download the Metadata file under the heading '<b>INFORMATION REQUIRED TO AUTHENTICATE VIA EXTERNAL IDPS</b>'</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/download-metadata.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Download certificate"><br><br>
-</ul>
+
 
 </div>
 </div>
