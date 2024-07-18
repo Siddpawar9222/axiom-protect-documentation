@@ -1922,7 +1922,8 @@ th {
 .table-bordered>thead>tr>td,
 .table-bordered>tbody>tr>td,
 .table-bordered>tfoot>tr>td {
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
+    color: black;
 }
 
 .table-bordered>thead>tr>th,
@@ -1932,7 +1933,9 @@ th {
 
 .table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
-    background-color: #f9f9f9
+    background-color: #f9f9f9;
+    color: black;
+    
 }
 
 .table-hover>tbody>tr:hover>td,
