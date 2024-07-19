@@ -5,7 +5,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8">
-<title>Identity Providers | miniOrange Identity Platform Admin Handbook</title>
+<title>RBAC Role | Axiom-Protect Documentation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Identity Providers" />
 <meta property="og:title" content="Identity Providers | miniOrange Identity Platform Admin Handbook" />
@@ -866,17 +866,63 @@
       </ul>
 <!--  Breadcrumb Ends -->
 
-<h1 class="listas-main">External Identity Providers</h1><hr>
+<h1 class="listas-main">RBAC Role</h1><hr>
 
+
+<p>
+	Role-Based Access Control (RBAC) is a method of regulating access to computer or network resources based on the roles of individual users within an organization. With RBAC, permissions to perform specific tasks are assigned to roles rather than individual users, and users are assigned to roles, thereby gaining the permissions associated with those roles.
+	Only For SSO ?
+	<br>
+	<a href="https://en.wikipedia.org/wiki/Role-based_access_control" target="_blank">Know more about RBAC Role</a><br>
+</p>
+ <br>
+ 
+<h4><b>Configure RBAC Role for Apps:</b></h4><br>
 <ul class="authen_sub_bullets">
-  <li>An Identity Provider (Also known as IDP) is a service that creates and manages a users identity like ADFS, Google, Facebook, Azure, etc. Let’s add one.</li>
-  <li>Click on <b>Add Identity Provider</b> button. </li> 
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/add-idp.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Add IDP"><br><br>
-  <li>We provide support for multiple protocols like SAML, Oauth, OpenID and CAS to connect with an Identity Provider. You can add any number of Identity Providers to authenticate your users or a specific group of users.</li>
-  <li>Here you can easily configure an IDP by providing the required information in the respective fields or by importing the IDP metadata.</li>
-  <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/import-idp-metadata.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Import IDP metadata"><br><br>
-  <li>Learn more about <a target="_blank" href="https://www.miniorange.com/iam/login-with-external-idp">Identity providers and how to setup an IdP.</a></li>
+	<li>Login into axiom-protect website.</li>
+    <img loading="lazy" src="../../../images/dashboard/dashboard-img.png" class="img_size" alt="dashboard-img.png"><br><br>
+	<li>Go to <b>applications &gt; &gt; RBAC Role</b> button.</li>
+	<img loading="lazy" src="../../../images/app-images/RBACRole/RBACRole.png" class="img_size" alt="RBACRole.png"><br><br>
+	<li>You will get all available RBAC Role for application</li>   
+</ul>
 
+<h4><b>Add Role for App:</b></h4><br>
+<ul class="authen_sub_bullets">
+	<li>Click on <b>Add New Role</b> Option.</li>
+    <img loading="lazy" src="../../../images/app-images/RBACRole/RBACRole_add.png" class="img_size" alt="RBACRole_add.png"><br><br>
+	<li>Enter Role name and choose application. Click on save.</li>
+	<img loading="lazy" src="../../../images/app-images/RBACRole/RBACRole.png" class="img_size" alt="RBACRole.png"><br><br>
+	<li>New Role for selected application will be created.</li> 
+</ul>
+
+<h4><b>Edit Role for App:</b></h4><br>
+<ul class="authen_sub_bullets">
+	<li>Click on Edit option under action column to change role name and application.</li>
+    <img loading="lazy" src="../../../images/app-images/RBACRole/RBACRole_edit.png" class="img_size" alt="RBACRole_edit.png"><br><br>
+	<li>Click on RBAC Attribute to change access level.</li>
+	<img loading="lazy" src="../../../images/app-images/RBACRole/RBACRole_attribute.png" class="img_size" alt="RBACRole_attribute.png"><br><br>
+	<li>Here is a description of what each field under the <b>RBAC Attribute </b> page.</li>
+	<ul class="authen-sub-points">
+		<li><b>Role</b> - Defines the permissions and access levels for a user or group within the application.
+			example. Admin
+		</li>
+		<li><b>Attribute Name</b> - The specific resource or action that the role has permissions for.
+			example. Dashboard
+		</li>
+		<li><b>Data Type</b> - The type of data associated with the attribute, often specifying the format or nature of the data.
+			example. boolean
+		</li>
+		<li><b>Category</b> - The classification of the attribute, which can be predefined or custom.
+			example. Custom
+		</li>
+		<li><b>Read</b> - Indicates if the role can view the attribute (true/false).
+		</li>
+		<li><b>Write</b> - Indicates if the role can modify the attribute (true/false).
+		</li>
+		<li><b>Status</b> - The current state or condition of the attribute, such as active or inactive.
+		</li>
+	</ul>
+	<li>Click on <b>Save Changes</b> button to save changes.</li>
 </ul>
 
 </div>

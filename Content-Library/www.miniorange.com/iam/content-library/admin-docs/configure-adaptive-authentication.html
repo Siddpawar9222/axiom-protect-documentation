@@ -5,7 +5,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8">
-<title>Adaptive Authentication | miniOrange Identity Platform Admin Handbook</title>
+<title>System Admin - Access Role Matrix | Axiom-Protect Documentation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Adaptive Authentication" />
 <meta property="og:title" content="Adaptive Authentication | miniOrange Identity Platform Admin Handbook" />
@@ -875,188 +875,53 @@
       </ul>
  <!-- Breadcrumb Ends -->
 
-<h1 class="listas-main">Adaptive Authentication</h1><hr>
+<h1 class="listas-main"></h1><hr>
 
-<h4><b>Why you need to configure Adaptive Authentication (MFA) for Admin?</b></h4>
-<p> If you want to reduce the burden of 2fa on your users and also want to add the extra layer of security ,you can do that by configuring <a href="https://www.miniorange.com/products/adaptive-multi-factor-authentication-mfa" target="_blank">adaptive authentication</a> methods. With miniOrange you can set adaptive methods differently for admin and users.
+<h4><b>Access Role Matrix Management</b></h4>
+<p> 
+	Access Role Matrix Management in  Axiom Protect is a feature that allows Sysyem Admin to define and manage the access control policies for various roles within the system. This involves specifying which roles have access to specific resources or actions and the type of access (System Management, Sysyem Configuration, System Reports, Security Management) they are granted.
+	Do i need system admin role ? 
 </p>
-
-<h3 class="listas-main saml_heading_font">1. Adaptive Authentication Configuration</h3>
-<p class="guide-heading-font">How to Add a new Adaptive Authentication Policy </p></li>
-      <ul class="authen_sub_bullets">
-          <li>Login to <b>Self Service Console </b>and navigate to Adaptive Authentication section from the side menu.</li>
-          <li>Select <b>Add Policy</b> tab from the configuration page and add name for your policy.<br/><br>
-        <img  class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/adaptive-add-policy.webp" alt="adaptive authentication add policy"><br/></li>
-        <li>There are six different sections you can configure in a Adaptive Authentication Policy :
-      </li>  <ul class="authen_sub_bullets">
-              <li>IP Restriction Configuration</li>
-              <li>Device Restriction Configuration</li>
-              <li>Location Restriction Configuration</li>
-              <li>Time Restriction Configuration</li>
-              <li>Action for behavior Change Configuration</li>
-              <li>Notification and Alert Message Configuration</li>
-          </ul>
-</ul>   
-<br>
-
-
-<h4 class="listas-sub saml_heading_font">A. IP Restriction Configuration :</h4>
-
-<p>In this restriction method admin configures a list of IP addresses to allow or deny access on and when a user tries to login into any of the applications configured with adaptive authentication, his IP address is checked against the configured IP list and based on that the action is decided as per the configuration (.i.e. Allow, Deny or Challenge).</p>
-<p>How to configure IP Restriction :</p>
-          <ul class="authen_sub_bullets">
-              <li>On the <b>Add Policy </b> tab, navigate to the <b>RESTRICTION CONFIGURATION </b>section and enable the <b>Enable IP Restriction</b> option.</li>
-              <li>Select <b>Action for behavior Change</b> if the Users IP Address is not in the configured list.</li>
-              <li>Specify the IP Address which you want to whitelist. For the IP Range other that the whitelisted one, you can select the above setting to reflect.</li> <li>Choose either allow or deny by selecting the radio button next to it.</li>
-              <li>If a user tries to login with the whitelisted IP address, they will always be allowed access.</li>
-              <li>We support IP addresses range in three formats i.e. IPv4, IPv4 CIDR and IPv6 CIDR. You can choose whichever is suitable for you from the dropdown menu.</li>
-              <li>You can add multiple IP's and IP ranges by  clicking on the <b>+</b> button.</li>
-              <img class="img_size" alt="Adaptive Authentication: IP Restriction" src="https://www.miniorange.com/images/identity-platform-handbook/adaptive-mfa-ip-restriction.webp" /><br><br>
-              <li>Scroll down to the bottom of the page and click on <b>save</b>.</li></ul>
-   
-    <ul class="authen_bullets">
-                <li><b>Notes:</b><br>
-                If you select Challenge as the action then select the same option in the Action for behavior Change Configuration section.</li>
-                </ul>
-                <br>
-
-
-<h4 class="listas-sub saml_heading_font">B. Device Restriction Configuration :</h4>
-<p>In this restriction method admin allow end-users to add a fixed number of devices as Trusted devices for their account(A device here refers to a Browser Session). Once a device is registered for a user, then that user will be allowed to login without any Restriction (This works with all other Restriction methods also). If the users registered Device exceeds the total registered device limit specified by the admin,In that case the user will be either Challenged or Denied as specified in the policy by the admin.</p>
-      <p>How to configure Device Based Restriction</p>
+ 
+<h4><b>Access Access Role Matrix Management :</b></h4><br>
 <ul class="authen_sub_bullets">
-<li>On the <b>Add Policy </b> tab navigate to <b>DEVICE CONFIGURATION</b> section and enable the Allow Users to Register Device  option.</li>
-<li>In the input field next to Number of Device Registrations Allowed enter the no. of devices you want your end-users to register.(2-3 devices are recommended.) </li>
-<li>Select your action if the number of devices registered by users exceeds the allowed limit. (.i.e Challenge or Deny)</li>
-<li>Enable the option <b>Send email alerts to Users </b>if number of Device registrations exceeded allowed count if you want to alert the user about no of devices exceeding the limit.</li>
-<img class="img_size" alt="Adaptive Authentication: Device Restriction" src="https://www.miniorange.com/images/identity-platform-handbook/adaptive-mfa-device-restriction.webp" /><br><br>
-<li>Scroll down to the bottom of the page and click on <b>save</b>.</li></ul>
-    <ul class="authen_bullets">
-      <li><b>Notes :</b></li>
-       <ul class="authen_sub_bullets">
-    <li>Users are only allowed to register devices when Challenge is selected as the Action.</li>
-    <li>Once a Device is registered, users will be allowed to login seamlessly without any restriction.</li>
-    <li>If you select Challenge as the action then select the same option in the Action for behavior Change Configuration section.</li>
-  </ul></ul>
-</li>
-<br>
-
-
-<h4 class="listas-sub saml_heading_font">C. Location Restriction Configuration :</h4>
-<p> In this restriction method admin configures a list of locations where we want to allow end-users to either login or deny  based on the condition set by the admin. When a user tries to login with adaptive authentication enabled, his Location Attributes such as (Latitude, Longitude and Country Code) are verified against the Location list configured by the admin. And based on this user will be either allowed, challenged or denied.</p>
-      <p>How to configure Location Based Restriction</p>
-<ul class="authen_sub_bullets">
-<li>On the <b>Add Policy </b> tab navigate to <b>LOCATION CONFIGURATION </b>section and enable the <b>Enable Location Based Restriction</b> option.</li>
-<li>In the enter location input field enter the Location Name and then select the correct location from the search results using the UP & DOWN navigation keys. </li>
-<li>Add the In and Around Distance for your location in the next input field. This will be the total area in and around the location we have configured using the Latitude and Longitude points.</li>
-<li>In the next select list, select your distance parameter as either KMS(KiloMeters) or Miles.For each Location you add, you can choose to either allow or deny it by enabling or disabling the switch button next to it.</li>
-<li>You can click on the <b> + </b>button to add more than one location and then follow steps 2-4 as mentioned above.</li>
-<img class="img_size" alt="Adaptive Authentication: Location Restriction" src="https://www.miniorange.com/images/identity-platform-handbook/adaptive-mfa-location-restriction.webp" /><br><br>
-<li>Scroll down to the bottom of the page and click on <b>save</b>.</li>
+	<li>Login into axiom-protect website.</li>
+    <img loading="lazy" src="../../../images/dashboard/dashboard-img.png" class="img_size" alt="dashboard-img.png"><br><br>
+	<li>Go to <b>Sytem Admin &gt; &gt; Access Role Matrix</b> .</li>
+	<img loading="lazy" src="../../../images/system_admin/access_role_matrix/systemAdmin_roleMatrix.png" class="img_size" alt="systemAdmin_roleMatrix.png"><br><br>
+	<li>You will get all available Roles.</li>   
 </ul>
-<br>
 
-
-<h4 class="listas-sub saml_heading_font">D. Time Restriction Configuration :</h4>
-<p>In this restriction method admin configures a time zone with Start and End Time’s for that time zone and users are either allowed, denied or challenged based on the condition in the policy. When an end-user tries to login with the adaptive authentication enabled, his time zone related attributes such as Time-Zone and Current System Time are verified against the list configured by the admin and based on the configuration the user is either allowed, denied or challenged.</p>
-<p>How to configure Time Based Restriction</p>
+<h4><b>Add Role:</b></h4><br>
 <ul class="authen_sub_bullets">
-<li>On the <b>Add Policy</b>  tab navigate to <b>TIME OF ACCESS CONFIGURATION </b>section and enable the <b>Enable Time Based Restriction</b> option.</li>
-<li>From the select Timezone list, select the timezone. From the Start Time and End Time lists select the appropriate values. For each Time configuration you add, you can choose to either allow or deny it by enabling or disabling the switch button next to it.</li>
-<li>Enter the a value in minutes in the input field next to Time Difference allowed for Fraud Prevention check. This value allows you to specify some relaxation before your start time and after your end time. (so if the start time is 6 AM and the end time is 6PM with a time difference value set to 30 minutes, then the policy will consider time from 5:30AM to 6:30 PM). If no value is entered in this field, the default value is set which is 15 minutes.</li>
-<li>You can click on the<b> + </b>button to add more than one Time Configurations and then follow step 2 as mentioned above.</li>
-<img class="img_size" alt="Adaptive Authentication: Time Restriction" src="https://www.miniorange.com/images/identity-platform-handbook/adaptive-mfa-time-restriction.webp" /><br><br>
+	<li>Click on <b>Add New Role</b> Option.</li>
+    <img loading="lazy" src="../../../images/system_admin/access_role_matrix/systemAdmin_roleMatrix_add.png" class="img_size" alt="systemAdmin_roleMatrix_add.png"><br><br>
+	<li>Enter Role name. Click on save.</li>
+	<img loading="lazy" src="../../../images/system_admin/access_role_matrix/systemAdmin_roleMatrix_add.png" class="img_size" alt="systemAdmin_roleMatrix_add.png"><br><br>
+	<li>New Role for selected application will be created.</li> 
 </ul>
-<br>
 
-<h4 class="listas-main saml_heading_font">2. Action for behavior Change Configuration</h4>
-<img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/action-for-behaviour-challenge.webp" alt="adaptive authentication Action for behavior Change Configuration"> <br/>
+<h4><b>Edit Role: </b></h4><br>
 <ul class="authen_sub_bullets">
-<li>You can configure one the three possible actions for your Adaptive Authentication Policy as explained below :</li>
-<h4>Action for behavior Change Options :</h4> <br>
-
-<table class="table table-bordered table-striped table-responsive">
-<tr>
-<th>Attribute</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>Allow</td>
-<td>Allow user to authenticate and use services if Adaptive authentication condition is true.</td>
-</tr>
-<tr>
-<td>Challenge</td>
-<td>Challenge users with one of the three methods mentioned below for verifying user authenticity.</td>
-</tr>
-<tr>
-<td>Deny</td>
-<td>Deny user authentications and access to services if Adaptive authentication condition is true.</td>
-</tr>
-</table>
-
-<br><h5>Challenge Type Options :</h5> <br>
-
-<table class="table table-bordered table-striped table-responsive">
-  <tr>
-  <th>Attribute</th>
-  <th>Description</th>
-  </tr>
-  <tr>
-  <td>User second Factor</td>
-  <td>The User needs to authenticate using the second factor he has opted or assigned for such as
-    <ul class="authen_sub_bullets">
-      <li>OTP over SMS</li>
-      <li>PUSH Notification</li>
-      <li>OTP over Email</li>
-      <li>And 12 more methods.</li>
-    </ul></td>
-  </tr>
-  <tr>
-  <td>Security Questions</td>
-  <td>The System will ask the user for 2 of 3 questions he has configured in his Self Service Console. Only after the right answer to both questions is the user is allowed to proceed further.</td>
-  </tr>
-  <tr>
-  <td>OTP over Alternate Email</td>
-  <td>User will receive a OTP on the alternate email he has configured threw Self Service Console. Once user provides the correct OTP he is allowed to proceed further.  </td>
-  </tr>
-</table>
-</li>
-<li>Action for behavior Change and Challenge Type can be configured from the Action For behavior Change section of the Adaptive Authentication page.</li>
+	<li>Click on Edit option under action column to change role.</li>
+	<li>To change Access Right for particular role,click on <b>VIEW</b> button.</li>
+	<li>You will get role access for selected role.</li>
+	<ul class="authen_sub_bullets">
+		<li><b>System Management:</b>:</li>
+	<img loading="lazy" src="../../../images/system_admin/access_role_matrix/systemAdmin_roleMatrix_systemManagment.png" class="img_size" alt="systemAdmin_roleMatrix_systemManagment.png"><br><br>
+	<li><b>System Configuration:</b></li>
+	<img loading="lazy" src="../../../images/system_admin/access_role_matrix/systemAdmin_roleMatrix_systemConfig.png" class="img_size" alt="systemAdmin_roleMatrix_systemConfig.png"><br><br>
+	<li><b>System Report:</b></li>
+	<img loading="lazy" src="../../../images/system_admin/access_role_matrix/systemAdmin_roleMatrix_systemReport.png" class="img_size" alt="systemAdmin_roleMatrix_systemReport.png"><br><br>
+	<li><b>Security Management :</b></li>
+	<img loading="lazy" src="../../../images/system_admin/access_role_matrix/systemAdmin_roleMatrix_securityManagment.png" class="img_size" alt="systemAdmin_roleMatrix_securityManagment.png"><br><br>
 </ul>
-<br>
-
-<h4 class="listas-main saml_heading_font">3. Notification and Alert Message Configuration</h4>
-<p>This section handles the notifications and alerts related to Adaptive Authentication.It provides the following options :</p>
-<ul class="authen_sub_bullets">
-<li>Get email alerts if users login from unknown devices or locations : Admin need to enable this option to enable receiving alerts for different alert options.</li> 
-<img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/get-email-alerts.webp" alt="adaptive authentication Action for behavior Change Configuration"> <br><br>
-
-<table class="table table-bordered table-striped table-responsive">
-<tr>
-  <th>Option</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td>Challenge Completed and Device Registered</td>
-  <td>Enabling this option allows you to send an email alert when an end-user completes a challenge and registers a device.</td>
-</tr>
-<tr>
-  <td>Challenge Completed but Device Not Registered</td>
-  <td>Enabling this option allows you to send an email alert when an end-user completes a challenge but do not registers the device.</td>
-</tr>
-<tr>
-  <td>Challenge Failed</td>
-  <td>Enabling this option allows you to send an email alert when an end-user fails to complete the challenge.</td>
-</tr>
-</table><br>
-
-<img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/receive-email-alerts.webp" alt="adaptive authentication Action for behavior Change Configuration"> <br><br>
-<li>Next subsection is Send email alerts which allows us to enable or disable alerts for admin and end-users. To enable alerts for admins, you can enable the “Administrators” switch button.</li>
-<br><img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/send-email-alerts-to.webp" alt="adaptive authentication Action for behavior Change Configuration"> <br><br>
-<li>In case you want multiple admins accounts to receive alerts then you can enable the option for admin and then enter the admin emails separated by a ‘,’  in the input field next to Administrators email to receive alerts label. To enable alerts for the end-users, you can enable the “End Users” switch button.</li>
-<li>In case you want to customize the deny message that end user receive in case his authentication denied due to adaptive policy, you can do this by entering the message inside <b>“Deny message”</b> text box.</li>
-<img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/customize-deny-message.webp" alt="adaptive authentication Action: Customize Deny message">
+<li>Explanation:</li>
+<ul class="authen-sub-points">
+    <li>Let's suppose you created a demo role. In System Management, under Operator Management, you checked the options for <b>list</b> and <b>add</b> while keeping <b>edit</b> and <b>delete</b> unchecked.</li>
+    <li>In this case, an operator/user with this role can see the available operator/user and add new operator/user, but they cannot delete or edit existing operator/user.</li>
 </ul>
+
 <br><br>
 
 </div></div></div>
