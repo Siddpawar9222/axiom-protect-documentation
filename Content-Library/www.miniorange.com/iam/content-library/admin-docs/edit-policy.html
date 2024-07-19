@@ -733,7 +733,7 @@
 								</div>
 								<div id='Policies' class='panel-collapse collapse in'>
 									<div class='panel-body left-section-collapse-panel-body'>
-										<li class='list-unstyled nav-sub-heading '><a href='policies-overview.html'>Policies Overview</a></li><li class='list-unstyled nav-sub-heading '><a href='create-new-policy.html'>How to create a New Policy</a></li><li class='list-unstyled nav-sub-heading release-notes-left-navigation-active'><a href='edit-policy.html'>How to edit a Policy</a></li><li class='list-unstyled nav-sub-heading '><a href='how-to-assign-policy.html'>How to assign a policy to an app</a></li><li class='list-unstyled nav-sub-heading '><a href='restrict-apps-to-particular-users.html'>Restrict apps to a particular set of users</a></li><li class='list-unstyled nav-sub-heading '><a href='delete-policy.html'>How to Delete a Policy</a></li>
+										<li class='list-unstyled nav-sub-heading '><a href='policies-overview.html'>Policies Overview</a></li><li class='list-unstyled nav-sub-heading '><a href='create-new-policy.html'>How to create a New Policy</a></li><li class='list-unstyled nav-sub-heading release-notes-left-navigation-active'><a href='edit-policy.html'>How to edit a Policy</a></li><li class='list-unstyled nav-sub-heading '><a href='how-to-assign-policy.html'>How to assign a policy to an app</a></li><li class='list-unstyled nav-sub-heading '><a href='restrict-apps-to-particular-users.html'>Restrict apps to a particular users</a></li><li class='list-unstyled nav-sub-heading '><a href='delete-policy.html'>How to Delete a Policy</a></li>
 									<div/>
 								</div>
 							</div>
@@ -869,15 +869,25 @@
 
 <li>Then you will get edit page. Edit policy according to requirement</li>
 <ol class="authen_sub_bullets">
-  <li>Operator Authentication</li>
+  <li><b>Operator Authentication</b></li>
+  <li>"Operator Authentication" refers to the policies and mechanisms used to verify the identity of operators (users with administrative or operational roles) before they can access or perform actions within the system</li>
+  
   <img loading="lazy" src="../../../images/policy/edit-policy_operator_authentication.png" class="img_size" alt="edit-policy_operator_authentication.png"><br><br>
-  <li>User Authentication Network</li>
+  <li>Enforce 2FA (Two-Factor Authentication), When enabled, it requires operators to use a two-factor authentication method when accessing the system. This adds an extra layer of security by requiring something the user knows (password) and something the user has (a second factor, such as a mobile device for receiving a verification code).</li>
+  <li>Every Time, When enabled, it requires operators to go through the two-factor authentication process every time they log in, rather than allowing them to skip this step if they have authenticated recently.</li>
+  <li><b>User Authentication Network</b></li>
+  <li>Specify networks using a space-separated list of IP addresses, IP ranges, or CIDRs. These must be public IP addresses, and not local or private IP addresses.</li>
   <img loading="lazy" src="../../../images/policy/edit-policy_userAutheticationNet.png" class="img_size" alt="User Authentication Network"><br><br>
-  <li>User Pre-registration</li>
+  <li><b>User Pre-registration</b></li>
+  
   <img loading="lazy" src="../../../images/policy/edit-policy_userPreresstration.png" class="img_size" alt="User Pre-registration"><br><br>
-  <li>On Device Onboard</li>
+  <li>allows you to specify which countries or locations are permitted for user pre-registration. The input field is likely for entering country codes or names.</li>
+  <li>Blocked Ips: Here, you can list IP addresses that are blocked from pre-registering. This is used to prevent users from specific IP addresses from registering.</li>
+  <li>Allowed Devices: This section allows you to specify particular devices that are permitted for pre-registration. This might involve entering device IDs or types.</li>
+  <li>Allowed Browser: This part lets you select which web browsers are allowed for user pre-registration. In the example shown, Chrome, Firefox, and Internet Explorer are options. You can check the boxes for the browsers you want to allow.</li>
+  <li><b>On Device Onboard</b></li>
   <img loading="lazy" src="../../../images/policy/edit-polic_onDeviceOnboard.png" class="img_size" alt="On Device Onboard"><br><br>
-  <li>On Server Onboard</li>
+  <li><b>On Server Onboard</b></li>
   <img loading="lazy" src="../../../images/policy/edit-policy_onServerOnboard.png" class="img_size" alt="On Server Onboard"><br><br>
 </ol>
 <!-- <table class="table table-striped table-bordered">
