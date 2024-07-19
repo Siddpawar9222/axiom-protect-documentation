@@ -5,7 +5,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8">
-<title>How to add a SAML App | miniOrange Identity Platform Admin Handbook</title>
+<title>How to add a SAML App | Axiom-Protect Documentation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Add SAML App" />
 <meta property="og:title" content="How to add a SAML App | miniOrange Identity Platform Admin Handbook" />
@@ -868,29 +868,75 @@
       </ul>
  <!-- Breadcrumb Ends -->
 
-<h1 class="listas-main">How to add a SAML App</h1><hr>
+ <h1 class="listas-main">How to add a SAML App</h1><hr>
+
+ <p>Axiom-Protect supports Single Sign-on into your apps, to securely login for admins and users. Axiom-Protect supports several different protocols for your applications, such as  <b>RADIUS,</b> ,<b>Custom(such as Sonic ekyc, Google Auth, Neofy etc.)</b> and <b>SAML</b>. Using Single Sign-on, users can use one set of credentials to login to multiple applications. This improves security, as it reduces avenues for phishing attacks, and also improves access to your application.
+ </p>
+ <p>Security Assertion Markup Language (SAML) is an XML standard that allows secure web domains to exchange user authentication and authorization data. Using SAML, an online service provider (SP) can contact a separate online identity provider to authenticate users who are trying to access secure content. miniOrange provides a solution to perform single sign-on (SSO) for applications supporting SAML protocol, like AWS, WordPress,  Atlassian, Dropbox Enterprise, moodle, SAP, Zoho, zendesk, etc. The steps to configure SSO settings for SAML applications on axiom are as follows.</p><br>
+ 
+ <h4><b>Configure Single Sign-On (SSO) Settings for SAML Apps:</b></h4><br>
 
 
 <ul class="authen_sub_bullets">
-	<li>Go to <b>Apps</b> Click on <b>New Application</b> button.</li>
+	<li>Login into axiom-protect website.</li>
+	<img loading="lazy" src="../../../images/dashboard/dashboard-img.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Add Application"><br><br>
+	<li>Go to <b>applications &gt; New Application</b> button.</li>
 	<img loading="lazy" src="../../../images/app-images/App-home.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Add Application"><br><br>
-	<li>click on <b>Single Sign-On</b> as Application type.</li>
+	<li>In <b>Create New Application</b> click on <b>Single-Sign-on</b> option.</li>
 	<img loading="lazy" src="../../../images/app-images/sso-3.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Radius app type"><br><br>
 	<li>Click on <b>SAML2.0</b> to add SAML Client.</li>
 	<img loading="lazy" src="../../../images/app-images/saml-1.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
-	<li>Configure the below details in <b>General App Settings</b> to add SAML Client.</li>
+	<li>Next you have to configure the below details in <b>General App Settings</b> to add SAML Client.</li>
 	<img loading="lazy" src="../../../images/app-images/saml-create.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
-	<li>Configure the below details in <b>General App Settings</b> to add SAML Client.</li>
+		<li>Here is a description of what each field under the <b>General App Settings </b> section means.</li>
+	<ul class="authen-sub-points">
+		<li><b>App Name </b> - Any name for your reference.</li>
+		<li><b>Select Policy </b> - Select any policy. You can create your policy and select over here.</li>
+		 <li><b>App Logo </b> - Select Logo for your application.</li>
+	   </ul>
+	<li>Next you have to configure the below details in <b>Configure SAML IDP</b>.</li>
 	<img loading="lazy" src="../../../images/app-images/sml-create-2.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
-	<li>Configure the below details in <b>General App Settings</b> to add SAML Client.</li>
+	<ul class="authen-sub-points">
+		<li><b>NameID</b> defines what SP is expecting in the subject element of SAML Assertion. Generally, NameID is Username of Email Address</li>
+		<li><b>NameID format</b> defines the format of subject element content, i.e. <b>NameID</b>.
+		For example, Email Address NameID format defines that the NameID is in the form of an email address, specifically “addr-spec”. An addr-spec has the form local-part@domain, has no phrase (such as a common name) before it, has no comment (text surrounded in parentheses) after it, and is not surrounded by “&lt;” and “&gt;”.
+		If <b>NameID format</b> is not externally specified by SP, leave it unspecified.</li>
+		<li><b>Assertion Encryption(Select Encryption or Unencryption)</b> if you want to encrypt the assertion in SAML response and provide the algorithm and certificate for encryption.</li>
+	</ul>
+
+	<li>Next you will get <b>Edit SAML Application</b></li>
 	<img loading="lazy" src="../../../images/app-images/saml-3.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
-	<li>Configure the below details in <b>General App Settings</b> to add SAML Client.</li>
-	<img loading="lazy" src="../../../images/app-images/saml-sp.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
+	<li>Here is a description of what each field under the <b>Identity Provider(IDP) Details</b> section means.</li>
+	<ul class="authen-sub-points">
+		<li><b>Single Login URL </b> - The URL where users are redirected for authentication.</li>
+		<li><b>Single Logout URL </b> - The URL where users are redirected to log out from the identity provider..</li>
+		 <li><b>IDP Entity ID</b> - A unique identifier for the identity provider. </li>
+		 <li><b>IDP metadata details </b> - XML configuration file that contains all necessary information about the identity provider, including endpoints and certificates.</li>
+			<li><b>Name ID Format </b> - Specifies the format of the identifier used for the subject in SAML assertions, such as email address, username, or an unspecified string.You can edit this by click on <b>Edit</b>  button.</li>
+	   </ul>
+	<li>Under the <b>Identity Provider(IDP) Details</b></li>
+	<img loading="lazy" src="../../../images/app-images/saml_sp.png" class="img_size" alt="saml_sp.png"><br><br>
+	<li>Click on <b>Create Service Provide</b> option.</li>
+	<img loading="lazy" src="../../../images/app-images/saml_createServiceProvider.png" class="img_size" alt="saml_createServiceProvider.png" class="img_size"><br><br>
+	<li>Here is a description of what each field under for <b>Create Service Provide</b>.</li>
+	<ul class="authen-sub-points">
+		<li><b>Single Sign-on URL</b> - The  URL where the service provider sends authentication requests to the identity provider.</li>
+		 <li><b>Single Logout URL</b> - The URL where the service provider sends logout requests to the identity provider.</li>
+		 <li><b>Audience URI </b>- as the name suggests, specifies the valid audience for SAML Assertion. It is usually the same as <b>SP Entity ID</b>. If <b>Audience URI</b> is not specified separately by SP, leave it blank.</li>
 
+		 <li><b>Relay State</b> - Enter the URL where you want the user to redirect after sign in to the application.
 
+			<li><b>Name ID Format </b> - Specifies the format of the identifier used for the subject in SAML assertions, such as email address, username, or an unspecified string.</li>
 
+			<li><b>Response </b> - Determines whether the SAML authentication response message is digitally signed by the IDP or not. A digital signature is required to ensure that only your IDP generated the response message..</li>
 
+			<li><b>Assertion Encryption (Select Encryption or Unencryption)</b> - if you want to encrypt the assertion in SAML response and provide the algorithm and certificate for encryption.</li>
 
+			<li><b>Authentication context class</b> - Identifies the SAML authentication context class for the assertion's authentication statement.</li>
+
+	   </ul>
+
+	   <li>You Can Edit Service Provider by Click on Edit button. You Will get same page like <b>Create Service Provide</b> </li>
 
 </div>
 </div>
