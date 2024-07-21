@@ -868,132 +868,62 @@
       </ul>
 <!-- Breadcrumb Ends -->
 
-<h1 id="stepa" class="listas-main" data-navtext="">How to add an OAuth App</h1><hr>
+<h1 id="stepa" class="listas-main" data-navtext="">How to add an openId App</h1><hr>
 
-<p>miniOrange supports Single Sign-on into your apps, to securely login for admins and users. miniOrange supports several different protocols for your applications, such as 
-<b>SAML</b>, <b>WS-FED</b>, <b>OAuth</b>, <b>OIDC</b>, <b>JWT</b>, <b>RADIUS,</b> etc. Using Single Sign-on, users can use one set of credentials to login to multiple applications. This improves security, as it reduces avenues for phishing attacks, and also improves access to your application.
+<p>
+	OpenID Connect (OIDC) is an identity layer built on top of the OAuth 2.0 protocol. It allows clients to verify the identity of end-users based on the authentication performed by an authorization server, as well as to obtain basic profile information about the end-users in an interoperable and REST-like manner. OIDC is widely used to enable Single Sign-On (SSO) and to provide secure, simple, and flexible identity management.
+	<br>
+	<a href="https://en.wikipedia.org/wiki/OpenID" target="_blank">Know more about openId</a><br>
 </p>
-<p><strong>OAuth (Open Authorization)</strong> is an open standard for token-based authentication and authorization. OAuth allows an end-user's account information to be used by third-party services, such as Facebook, without exposing the user's password. It acts as an intermediary on behalf of the end-user, providing the service with an access token that authorizes specific account information to be shared.
-miniOrange provides a solution to perform single sign-on(SSO) for applications supporting OAuth protocol, like Salesforce, WordPress, Joomla, Atlassian, Azure AD, Reddit, Spotify, Paypal, WHMCS, Slack, Discord, etc. </p><br>
 
-<h4><b>Configure Single Sign-On (SSO) Settings for OAuth Apps:</b></h4><br>
-<ul class="authen_sub_bullets">
-<li>Goto <b>Apps -&gt; Add Application</b> from the side menu.</li>
-<img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/add-application.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Add Application"><br><br>
-<li>click on the <b>OAuth/OIDC</b> tab.</li>
-<img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/dashboard-oauth.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: OAuth App type"><br><br>
+<br>
 
-<li>Search the <b>OAuth2/OpenID Connect</b> App and click on the app.</li>
-<img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/search-oauth.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search OAuth custom app"><br><br>
-
-<li>Enter the <b>Client Name</b>. Make sure <b>Redirect-URL</b> is in this format <b>https://&lt;mycompany.domain-name.com&gt;</b></li>
-<img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/oauth-app-details.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: OAuth app details"><br><br>
-
-<li>Add Description if required. You can also configure the Access/JWT/Refresh token expiry time.</li>
-    <ol class="authen_sub_bullets">
-        <li><b>Access Token Expiry:</b>  For how long the provided access token should be valid from creation. [In Hours] A new access token has to be generated after the expiry.</li>
-        <li><b>JWT Token Expiry:</b> For how long the generated JWT token should be valid. [ In Hours ]</li>
-        <li><b>Refresh Token Expiry:</b>For how long the generated refresh token should be valid. [In Days] You will have to generate a new refresh token after the mentioned no. of days.</li>
-    </ol>
-<img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/login-policy.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Login Policy"><br><br>
-
-<li>Adding an Authentication Policy for the application : </li>
-    <ol class="authen_sub_bullets">
-        <li>Select a <b>Group Name</b> from the dropdown – the group which should have access to the OAuth SSO using this app.</li>
-        <li>Give a policy name for Custom App in <b>Policy Name.</b></li>
-        <li>Select the Login Method Type for authentication like Password, Mobile, etc.</li>
-        <li>Enable 2 Factor/Adaptive for authentication if required.</li>
-    </ol>
-</ul>
+<h4><b>Configure OpenID connect:</b></h4><br>
 
 <ul class="authen_sub_bullets">
-<li><b>Getting required app details/updating app information:</b></li>
-<li>Go to <b>the Apps</b> section from the side menu. From the list of apps configured, locate the app you created. You can see the <b> Select &gt; &gt; Edit</b> option present in front of that specific app.</li>
-<img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/edit-app.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Edit Application"><br><br>
+	<li>Login into axiom-protect website.</li>
+	<img loading="lazy" src="../../../images/dashboard/dashboard-img.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Add Application"><br><br>
+	<li>Go to <b>applications &gt; New Application</b> button.</li>
+	<img loading="lazy" src="../../../images/app-images/App-home.png" class="img_size" alt="App-home.png"><br><br>
+	<li>In <b>Create New Application</b> click on <b>Single-Sign-on</b> option.</li>
+	<img loading="lazy" src="../../../images/app-images/sso-3.png" class="img_size" alt="sso-3.png"><br><br>
 
-<li>You can edit any of the above-mentioned details in case you want to change them.</li>
-<img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/oauth-endpoints.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: OAuth Endpoints"><br><br>
+	<li>Click on <b>OIDC - openID connect</b>.</li>
+	<img loading="lazy" src="../../../images/app-images/saml-1.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
+	<li>In <b>Add new OIDC App</b> page, Enter following details.</li>
+	<img loading="lazy" src="../../../images/app-images/openId_addopenIdPage.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
+	<li>Next you have to configure OpenId Application .</li>
+	<img loading="lazy" src="../../../images/app-images/openid_configurationApp.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
+	<li>Here is a description of what each field under the <b>configure OpenId Application</b>  page.</li>
+	<ul class="authen-sub-points">
+		<li><b>OIDC Application Type</b> - This specifies the kind of application you are setting up for OpenID Connect (OIDC). It could be web  or native.</li>
+		<li><b>App Integration Name</b> - 
+			This is the name you give to your application within the OIDC configuration. It's how you identify your app when you manage it.
+		</li>
+		<li><b>Sign-in Redirect URIs</b>- These are the URLs where Axiom (the identity provider) will send the user after they successfully log in. The authentication response and ID token will be sent to these URLs.</li>
+		<li><b>Sign-out Redirect URIs (Optional)</b>- These are the URLs where Axiom will send the user after they log out. This step ensures the user is redirected back to your application after signing out.</li>
+		<li><b>Token Endpoint Auth Method</b>- This is the method used to authenticate your application when it requests tokens from the token endpoint. The default method is none, but you might use other methods like client_secret_basic or client_secret_post.</li>
+		<li><b>Select Required Grant Types</b>- These are the methods your application can use to get access tokens. The default method is authorization code, which is commonly used for web and mobile applications. Other types  include refresh token or client credentials.</li>
+	</ul>
 
-<li>OAuth Endpoints:</li> 
-    <ol class="authen_sub_bullets">
-        <li><b>Authorization Endpoint [ /idp/openidsso]:</b></li>
-        <ol class="authen_sub_bullets">
-            <li>This endpoint is used to authenticate the end user with their miniOrange credentials. This authenticates the users and returns a response back to the redirect_url based on the parameters passed in the request. [Mainly the authorization code]</li>
-            <li>This endpoint takes the following parameters : </li>
-            <ol class="authen_sub_bullets">
-                <li><b>Client_id :</b>client_id of the application as configured in the previous steps</li>
-                <li><b>Redirect_uri:</b>The callback URL where you want to return the response</li>
-                <li><b>scope :</b>scope of authorization or level of access, you can send a single or multiple scopes separated by ‘+’. e.g “email+openid”. We support the following scopes : </li>
-                <ol class="authen_sub_bullets">
-                    <li><b>Email :</b> returns the email address of the user in the response</li>
-                    <li><b>Profile :</b> returns user profile information in the response</li>
-                    <li><b>OpenID :</b> returns the id_token containing user profile details.</li>
-                </ol>
-                
-            </ol>
-            <li>This returns the authorization code and the state parameters in the response.</li>
-        </ol>
-        <li><b>Token Endpoint  [ /rest/oauth/token]:</b></li>
-            <ol class="authen_sub_bullets">
-                <li>This endpoint returns the following :</li>
-                    <li><b>-Id_token </b>​Contains user attributes and signatures which you have to validate with provided public certificate.</li>
-                    <table class="table table-striped table-bordered">
-                    <tbody>
-                    <tr>
-                    <td>iss</td>
-                    <td>https URI that indicates the issuer</td>
-                    </tr>
-                    <tr>
-                    <td>sub</td>
-                    <td>identifier of the user at the issuer</td>
-                    </tr>
-                    <tr>
-                    <td>aud</td>
-                    <td>client_id of the requesting client</td>
-                    </tr>
-                    <tr>
-                    <td>nonce</td>
-                    <td>the nonce parameter value received from the client</td>
-                    </tr>
-                    <tr>
-                    <td>exp</td>
-                    <td>expiration time of this token</td>
-                    </tr>
-                    <tr>
-                    <td>iat</td>
-                    <td>time when this token was issued</td>
-                    </tr>
-                    <tr>
-                    <td>auth_time</td>
-                    <td>time the authentication happened</td>
-                    </tr>
-                    <tr>
-                    <td>at_hash</td>
-                    <td>the first half of a hash of the access token</td>
-                    </tr>
-                    </tbody>
-                    </table>
-                <li><b>-Access_token :</b>Valid for 1 hour and can be used to access user info or other endpoints until it is expired.</li>
-                <li>This endpoint takes the following parameters in the request: </li>
-                    <ol class="authen_sub_bullets">
-                        <li><b>Client_id :</b>client_id of the application as configured in the previous steps.</li>
-                        <li><b>Client_secret :</b>client_secret of the application as configured in the previous step.</li>
-                        <li><b>Redirect_url :</b>The callback url where the response should be posted.</li>
-                        <li><b>Code :</b> The authorization code received from the authorization endpoint.</li>
-                        <li><b>Grant_type :</b>The OAuth grant you want to use for the request.</li>
-                    </ol>
-                    
-            </ol>
-        <li><b>User Info Endpoint [ /api/oauth/getuserinfo ]: [Required in case of OAuth Only]</b></li>
-            <ol class="authen_sub_bullets">
-                <li>This API can be used to fetch user profile information with an access token that was assigned to the user. A GET request is sent to the user info endpoint.</li>
-                <li>You need to send the access token in the authorization header to receive the user details.</li>
-            </ol>
-        <li><b>Single Logout URL : [/idp/oidc/logout?post_logout_redirect_uri=]:</b></li>
-        <ol class="authen_sub_bullets"><li>This endpoint removes the active user session from the miniOrange IDP and redirects the user to the URL mentioned in the post_logout_url parameter.</li></ol>    
-    </ol>
-<img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/oauth-endpoints-view.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: View OAuth Endpoints"><br><br>
+	<li>Next you will get <b>openId details</b> page.</li>
+	<img loading="lazy" src="../../../images/app-images/openid_openIddetailspage_basic.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
+	
+	<li>Under the <b>Response </b> section , You will get all response</li>
+	<img loading="lazy" src="../../../images/app-images/openid_openIddetailspage_response.png" class="img_size" alt="openid_openIddetailspage_response.png" class="img_size"><br><br>
 
+	<li>Under the <b>Response </b> section , You can add response</li>
+	<img loading="lazy" src="../../../images/app-images/openid_openIddetailspage_addResponse.png" class="img_size" alt="saml_sp.png"><br><br>
+	<li>Here is a description of what each field.</li>
+	<ul class="authen-sub-points">
+		<li><b>Resource </b> - Refers to the information returned by the authorization server after an authentication request.</li>
+		<li><b>Resource Name</b> - This is the label or identifier for the resource that the response is associated with, helping to organize or categorize it.</li>
+		<li><b>Resource URL</b> - The URL where the resource can be accessed, which is the endpoint your application will use to fetch or send data.</li>
+		<li><b>Access Token Format</b> - Specifies the format of the access token, such as JWT (JSON Web Token) or Opaque, determining how the token is structured and used.</li>
+		<li><b>Scopes</b> - The permissions or access rights requested by your application. Scopes define what resources or actions the access token will grant access to, such as "profile" or "email".</li>
+		<li><b>Token TTL (in Sec)</b> - The Time-To-Live for the access token, expressed in seconds. It defines how long the token is valid before it expires, ensuring security by limiting its lifespan.</li>
+	</ul>
+    <li> You can Edit <b>Response </b> by click on edit button</li>
 </ul>
 
 </div>

@@ -5,7 +5,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8">
-<title>How to configure a Radius Application</title>
+<title>How to configure a Radius Application | Axiom-Protect Documentation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Add Radius App" />
 <meta property="og:title" content="How to configure a Radius Application | miniOrange Identity Platform Admin Handbook" />
@@ -870,13 +870,21 @@
 
 <h1 class="listas-main">How to add a Radius App</h1><hr>
 
+
+<P>
+	RADIUS (Remote Authentication Dial-In User Service) application type refers to a networking protocol used for centralized Authentication, Authorization, and Accounting (AAA) management for users who connect and use a network service. RADIUS is commonly used by ISPs, enterprises, and other organizations to manage access to the internet, internal networks, and VPNs. <br>
+	<a href="https://en.wikipedia.org/wiki/RADIUS" target="_blank">Know more about RADIUS</a><br>
+</P> 
+<br>
+
+<h4><b>Configure RADIUS:</b></h4><br>
 <ul class="authen_sub_bullets">
 <li>Go to <b>Apps</b> Click on <b>New Application</b> button.</li>
 <img loading="lazy" src="../../../images/app-images/App-home.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Add Application"><br><br>
 <li>click on <b>RADIUS</b> as Application type.</li>
 <img loading="lazy" src="../../../images/app-images/radius-1.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Radius app type"><br><br>
 
-<li>Configure the below details in <b>General App Settings</b> to add Radius Client.</li>
+<li>Configure the below details in <b>Add new radius Integration</b> page to add Radius Client.</li>
 <img loading="lazy" src="../../../images/app-images/radius-create.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
 <li>Configure the below details in <b>Create Radius Integration</b> to update Radius Client.</li>
 <img loading="lazy" src="../../../images/app-images/add-new-radius.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
@@ -884,7 +892,7 @@
 	<tbody>
 	<tr>
 	<td><b>Client Auth Type:</b></td>
-	<td>Any Type for your reference.</td>
+	<td>Any Type for your reference. Can be OTP, OTP + Password ,Password only and Push</td>
 	</tr>
 	<tr>
 	<td><b>Radius Client IP:</b></td>
@@ -899,14 +907,20 @@
 	<td><b>Confirm Client Shared Secret</b>
 
 	<b></b></td>
-	<td>Please confirm your Client Shared Secret</td>
+	<td>Confirm your Client Shared Secret</td>
 	</tr>
 	</tbody>
 	</table>
-	<li>After configuring the given above details, Click on <b>Update</b> button or click on <b>view radius setting</b> if you want to view setting</li>
+	<li>After configuring the given above details, Click on <b>Update</b> button. You can also check radius seeting by click on <b>view radius setting</b>.</li>
 	<br>
-<li>Configure the below details in <b>Radius Server Configuration</b> </li>
+<li>When you click on  <b>view radius setting</b> option. You will get radius configuration.</li>
 <img loading="lazy" src="../../../images/app-images/radius-setting.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
+<li>When you click on  <b>Update</b> option it redirect to application dashboard. You can edit configuration by click on edit button.</li>
+<img loading="lazy" src="../../../images/app-images/radius_editApp.png" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Search Radius"><br><br>
+<li>Here is a description of field.</li>
+<ul class="authen-sub-points">
+	<li><b>Validation Source </b> - The backend system used to authenticate and authorize users. This source stores user credentials and policies, which the RADIUS server checks against when processing authentication requests.</li>
+</ul>
  <!-- <li>Configure the below details in <b>Basic Settings</b> and <b>Attribute Mapping</b> to add Radius Client.</li>
 <img loading="lazy" src="https://www.miniorange.com/images/identity-platform-handbook/radius-details.webp" class="img_size" alt="miniOrange Identity Platform Admin Handbook: Radius Details"><br><br> -->
 
