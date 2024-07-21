@@ -447,7 +447,8 @@
     font-weight: 600;
     letter-spacing: .5px;
     margin-bottom: 1.5rem;
-    font-size: 17px
+    font-size: 17px;
+    color: black;
 }
 
 .guide-title,
@@ -525,11 +526,11 @@
 }
 
 a {
-    color: #d5d5d5
+    color: #0a8ce9
 }
 
 a:hover {
-    color: #d5d5d5;
+    color: #000;
     text-decoration: none
 }
 
