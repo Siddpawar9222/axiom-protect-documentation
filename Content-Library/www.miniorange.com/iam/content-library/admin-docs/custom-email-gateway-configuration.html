@@ -6,7 +6,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8">
-<title>Configure Email Gateway in miniorange IDP</title>
+<title>Configure Email Gateway in Axiom-Protect</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Custom Email gateway configuration" />
 <meta property="og:title" content="Configure Email Gateway in miniorange IDP" />
@@ -867,67 +867,102 @@
       <!-- Breadcrumb Ends -->
   <h1 id="stepa" class="listas-main guide-title">Configure Email Gateway</h1><hr>
     <p><b>Simple Mail Transfer Protocol (SMTP)</b> is an internet standard communication protocol used for sending and receiving electronic mails (E-Mail). It can be described as a set of communication guidelines that allow computer softwares to transmit an electronic mail over the internet. </p>
-    <p>By default, miniOrange provides and uses it's own SMTP Gateway to send electronic mails to users. If you have a custom SMTP gateway configured, you can use the same to send SMS from your miniOrange account. Check out our list of  <a href="../smtp-gateways/index.html" target="blank"><b>Supported SMTP gateways</b></a>.</p><br>
+    <p>By default,axiom-protect provides and uses it's own SMTP Gateway to send electronic mails to users. If you have a custom SMTP gateway configured, you can use the same to send SMS from your axiom-protect account. Check out our list of  <a href="../smtp-gateways/index.html" target="blank"><b>Supported SMTP gateways</b></a>.</p><br>
     
-    <div class="install-help-box">
+    <!-- <div class="install-help-box">
 	    <h4>Note: </h4>
 	    <p>You can contact <b>idpsupport@xecurify.com</b> for adding your own gateway or if you need help with any SMTP Gateway integration.</p>
-    </div><br>
+    </div><br> -->
 
-    <p>Follow the guide to configure SMTP gateway in your account</p>
+ <p><b>Configure Email gateway in your account: </b></p>
   
-  <h2 id="stepa" class="listas-main saml_heading_font"></h2>
-    <h2 id="step1" class="listas-sub saml_heading_font">1. Set Organization SMTP Gateway</h2>  
+  <h2 id="stepa" class="listas-main saml_heading_font"></h2>  
     <ul class="authen_sub_bullets">
-      <li>Log in to the <a href="https://login.xecurify.com/" target="blank">miniOrange dashboard</a>.</li>
-      <li>Go to <b>Customization</b> tab and click on <b>Custom Email Provider</b></li>
-      <img class="img_size" src="https://www.miniorange.com/images/iam/select-custom-email-provider.webp" alt="Customization tab for Email Gateway" /><br><br>
-      <li>Select the <b>Enable your Email Provider</b> option.</li>
-      <img class="img_size" src="https://www.miniorange.com/images/iam/enable-email-provider.webp" alt="Configure primary SMTP server" /><br><br>
+      <li>Log in to the axiom-protect dashboard.</li>
+      <li>Go to <b>Configuration</b> tab and click on <b>Gateway</b> option. You will see email gateway</li>
+      <img class="img_size" src="../../../images/configuration/gateways/configuration.png" alt="Customization tab for Email Gateway" /><br><br>
+	  <li>Click on <b>Email Gateway Configuation</b></li>
+	  <img class="img_size" src="../../../images/configuration/gateways/email_primaryEmailSMTPGateway.png" alt="Customization tab for Email Gateway" /><br><br>
       <li>Enter the SMTP Server Configurations.</li>
-        <table class="table table-bordered table-striped">
-            <tr>
-            <th>Parameter</th>
-            <th>Description</th>
-            </tr>
-            <tr>
-            <td>Hostname</td>
-            <td>Hostname of the email SMTP gateway</td>
-            </tr>
-            <tr>
-            <td>Port Number</td>
-            <td>Enter the port number.</td>
-            </tr>
-            <tr>
-            <td>Username</td>
-            <td>Your account username </td>
-            </tr>
-            <tr>
-            <td>Password</td>
-            <td>Your account password. </td>
-            </tr>
-            <tr>
-            <td>Sender Email</td>
-            <td>Your Sender Email.(sender email address is what receivers see in the From field of your Email)</td>
-            </tr>
-            <tr>
-            <td>Sender Name</td>
-            <td>Your Sender Name (sender name is what receivers see as from name of your Email) </td>
-            </tr>
-            <tr>
-            <td>Encryption Type</td>
-            <td>Select an encryption type out of the 2 options (SSL and TLS) which is supported by your SMTP.</td>
-            </tr>
-        </table>
+	  <li>Description of Each Field: </li>
+	  <table class="table table-bordered table-striped">
+		<tr>
+			<th>Parameter</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Status</td>
+			<td>Indicates whether the email gateway is active or inactive.</td>
+		</tr>
+		<tr>
+			<td>Retry Count with Auto Fail-Over to Secondary Gateway</td>
+			<td>Number of retry attempts to send an email, with automatic failover to a secondary gateway if the primary fails.</td>
+		</tr>
+		<tr>
+			<td>Wait Time Between Retries</td>
+			<td>The time interval between each retry attempt.</td>
+		</tr>
+		<tr>
+			<td>Host</td>
+			<td>The server address or hostname of the email SMTP gateway.</td>
+		</tr>
+		<tr>
+			<td>User ID</td>
+			<td>The user identifier required to authenticate with the email SMTP gateway.</td>
+		</tr>
+		<tr>
+			<td>Authenticate Using</td>
+			<td>The method or credential used for authentication.</td>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td>The name associated with the email account or gateway.</td>
+		</tr>
+		<tr>
+			<td>Sender Details</td>
+			<td>The email address or name that appears in the "From" field of sent emails.</td>
+		</tr>
+		<tr>
+			<td>Port</td>
+			<td>The port number used to connect to the email SMTP gateway.</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>The password required to authenticate the user with the email SMTP gateway.</td>
+		</tr>
+		<tr>
+			<td>SSL Enabled</td>
+			<td>Indicates whether SSL encryption is enabled for the connection.</td>
+		</tr>
+		<tr>
+			<td>Auth Enabled</td>
+			<td>Indicates whether authentication is required to connect to the email SMTP gateway.</td>
+		</tr>
+		<tr>
+			<td>Additional Attributes</td>
+			<td>Custom attributes that can be defined as key-value pairs for the email gateway configuration.</td>
+		</tr>
+		<tr>
+			<td>Parameters</td>
+			<td>Additional parameters that may be required by the email gateway for specific configurations.</td>
+		</tr>
+		<tr>
+			<td>Setting</td>
+			<td>Specific settings or configurations required for the email gateway to operate correctly.</td>
+		</tr>
+		<tr>
+			<td>Implementation Class</td>
+			<td>The class or method used to implement the email gateway integration in the application.</td>
+		</tr>
+	</table>
+	
       </ul>
 
-  <h2 id="step2" class="listas-sub saml_heading_font">2. Test SMTP Gateway Configuration</h2>  
     <ul class="authen_sub_bullets">
       <li>Enter email address and Click on the <b>Test Configuration</b> Button to test the SMTP email configuration.</li>
-      <img class="img_size" src="https://www.miniorange.com/images/iam/select-test-configuration.webp" alt="Test SMTP Server Configuration for Email Gateway"><br><br>
       <li>You can also enter a secondary email server information below.</li>
       <li>After entering the required information, click on <b>Save</b> button to save the configurations.</li>
-      <img class="img_size" src="https://www.miniorange.com/images/iam/save-email-gateway-configuration.webp" alt="Save SMTP Configuration"><br><br>
+      <img class="img_size" src="../../../images/configuration/gateways/email_secondaryEmailSMTPGateway.png" alt="Save SMTP Configuration"><br><br>
     </ul>
   </div><!-- paddingleft -->
 </div><!-- features -->

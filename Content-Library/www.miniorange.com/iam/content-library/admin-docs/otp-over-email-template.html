@@ -5,7 +5,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8">
-<title>OTP Over Email Template Customization</title>
+<title>Push Gateway Configuration</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - OTP over email template customization" />
 <meta property="og:title" content="OTP Over Email Template Customization | miniOrange Identity Platform Admin Handbook" />
@@ -869,28 +869,63 @@
       </ul>
  <!-- Breadcrumb Ends -->
 
-<h1 class="listas-main">OTP Over Email Template</h1><hr>
+<h1 class="listas-main">Push Gateway Configuration</h1><hr>
 
-<p>miniOrange supports OTP over Email as an authentication method in which users will receive the email on their registered email ids.The email includes a verification code that users need to enter to prove their identity. These emails are completely customizable as per the organization requirements.</p>
+<p>Push Gateway Configuration in the context of Axiom Protect refers to the setup process that enables the system to send push notifications to users' devices. Push notifications are messages that pop up on a user's mobile device or desktop, offering a way to deliver timely and relevant information even when the user is not actively using the application.</p>
 <br>
 
-<h2 class="listas-main saml_heading_font">Steps to Customize the template for OTP over Email:</h2>
+<p> <b>Configure Push Gateway in your account: </b></p>
+
 <ul class="authen_sub_bullets">
-    <li>Login to MiniOrange Admin Console.</li>
-    <li>Go to <b>Customization > Email Templates</b>.</li>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/customization-email-templates.webp" alt="miniOrange Identity Platform Admin Handbook: OTP Over Email Template Customization"/><br><br>
-    <li>Select <b>OTP Over Email</b> from the list shown.</li>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/otp-over-email-template.webp" alt="miniOrange Identity Platform Admin Handbook: OTP Over Email Template" /><br><br>
-    <li>To customize the default template, Select <b>SET CUSTOMIZED EMAIL TEMPLATE</b>.</li>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/set-customized-email.webp" alt="miniOrange Identity Platform Admin Handbook: set customized email" /><br><br>
-    <li>In this Section, you can modify <b>From Title, Subject, logo and the body of the email</b>.</li>
-    <li>You can also modify the Style of the existing template by using the options shown below.</li>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/customize-template.webp" alt="miniOrange Identity Platform Admin Handbook: customize template" /><br><br>
-    <li>If you have any HTML code to be used for the template, you can directly use that by clicking the button shown below.</li>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/source-code.webp" alt="miniOrange Identity Platform Admin Handbook: source code OTP Over Email Template" /><br><br>
-    <p>Once all the changes are made, this can be tested by sending a sample email. Just enter the email id and click on <b>Send Test Email</b> button.</p>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/send-test-email.webp" alt="miniOrange Identity Platform Admin Handbook: Send test email" /><br><br>
-    <li>Once the test Email is verified, Click on the <b>Save</b> button to apply the changes made.</li>
+	<li>Log in to the axiom-protect dashboard.</li>
+	<li>Go to <b>Configuration</b> tab and click on <b>Gateway</b> option. You will see Push Gateway Configuration</li>
+	<img class="img_size" src="../../../images/configuration/gateways/configuration.png" alt="Customization tab for Email Gateway" /><br><br>
+	<li>Click on <b>Push Gateway Configuration</b></li>
+	<img class="img_size" src="../../../images/configuration/gateways/pushMSGGateway.png" alt="pushMSGGateway" /><br><br>
+	<li>Description of Each Field: </li>
+	<table class="table table-bordered table-striped">
+		<tr>
+			<th>Parameter</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Status</td>
+			<td>Indicates whether the push gateway is active or inactive.</td>
+		</tr>
+		<tr>
+			<td>Retry Count</td>
+			<td>The number of times the system will retry sending a push message if the initial attempt fails.</td>
+		</tr>
+		<tr>
+			<td>Retry Duration</td>
+			<td>The time interval between each retry attempt.</td>
+		</tr>
+		<tr>
+			<td>App ID</td>
+			<td>The unique identifier for the application registered with Huawei Push Service.</td>
+		</tr>
+		<tr>
+			<td>App Secret Key</td>
+			<td>The secret key associated with the Huawei application, used for authenticating API requests.</td>
+		</tr>
+		<tr>
+			<td>HWS Uri</td>
+			<td>The endpoint URL for Huawei's push messaging service.</td>
+		</tr>
+		<tr>
+			<td>API Key</td>
+			<td>The key provided by the push service (e.g., Firebase Cloud Messaging) used to authenticate API requests.</td>
+		</tr>
+		<tr>
+			<td>GCM Uri</td>
+			<td>The endpoint URL for Google Cloud Messaging (now Firebase Cloud Messaging) service.</td>
+		</tr>
+		<tr>
+			<td>Google Sender ID</td>
+			<td>The unique identifier assigned to your Firebase project, used to identify the sender of the push notifications.</td>
+		</tr>
+	</table>
+	
 </ul>
 
 
