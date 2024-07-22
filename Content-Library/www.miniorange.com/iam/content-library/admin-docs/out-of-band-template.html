@@ -5,7 +5,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8">
-<title>Out of Band Email Template Customization</title>
+<title>WhatsApp Gateway | Axiom-Protect Documentation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Identity Platform Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Out of band email template customization" />
 <meta property="og:title" content="Out of Band Email Template Customization | miniOrange Identity Platform Handbook" />
@@ -911,28 +911,38 @@
       </ul>
  <!-- Breadcrumb Ends -->
 
-<h1 class="listas-main">Out of Band Email Template</h1><hr>
+<h1 class="listas-main">WhatsApp Gateway Configuation<h1><hr>
 
-<p>miniOrange supports <b>OUT of BAND Email</b> as an authentication method in which users will receive the email on their registered email ids.The email includes two links - <b>Accept</b> and <b>Deny</b>. Users can click on those links to either approve or deny the authentication request. These emails are completely customizable as per the organization requirements.</p>
+<p>
+	WhatsApp Gateway Configuration of Axiom Protect refers to the setup process that allows the system to send messages through WhatsApp to users. This feature leverages the widespread use and reliability of WhatsApp to deliver important notifications, alerts, and messages directly to users' WhatsApp accounts.
+</p>
 <br>
-
-<h2 ]class="listas-main saml_heading_font">Steps to Customize the template for OUT of BAND Email:</h2>
+<p> <b>Configure WhatsApp gateway in your account: </b></p>
 <ul class="authen_sub_bullets">
-    <li>Login to MiniOrange Admin Console.</li>
-    <li>Go to <b>Customization > Email Templates</b>.</li>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/customization-email-templates.webp" alt="miniOrange Identity Platform Handbook: Customization email template" /><br><br>
-    <li>Select <b>OUT of BAND Email</b> from the list shown.</li>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/out-of-band-email-template.webp" alt="miniOrange Identity Platform Handbook: Out Of Band Email Template" /><br><br>
-    <li>To customize the default template, Select <b>SET CUSTOMIZED EMAIL TEMPLATE</b>.</li>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/set-customized-email.webp" alt="miniOrange Identity Platform Handbook: set customized email template" /><br><br>
-    <li>In this Section, you can modify <b>From Title, Subject,text for Accept and Deny link, logo and the body of the email.</b>.</li>
-    <li>You can also modify the Style of the existing template by using the options shown below.</li>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/customize-template.webp" alt="miniOrange Identity Platform Handbook: Customize Template" /><br><br>
-    <li>If you have any HTML code to be used for the template, you can directly use that by clicking the button shown below.</li>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/source-code.webp" alt="miniOrange Identity Platform Handbook: source code" /><br><br>
-    <p>Once all the changes are made, this can be tested by sending a sample email. Just enter the email id and click on <b>Send Test Email</b> button.</p>
-    <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/send-test-email.webp" alt="miniOrange Identity Platform Handbook: Send test email" /><br><br>
-    <li>Once the test Email is verified, Click on the <b>Save</b> button to apply the changes made.</li>
+    <li>Log in to the axiom-protect dashboard.</li>
+	<li>Go to <b>Configuration</b> tab and click on <b>Gateway</b> option. You will see WhatsApp Gateway Configuration</li>
+	<img class="img_size" src="../../../images/configuration/gateways/configuration.png" alt="Customization tab for Email Gateway" /><br><br>
+	<li>Click on <b>WhatsApp Gateway Configuration</b></li>
+	<img class="img_size" src="../../../images/configuration/gateways/whatsappGateway.png" alt="pushMSGGateway" /><br><br>
+	<table class="table table-bordered table-striped">
+		<tr>
+			<th>Parameter</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Sender ID</td>
+			<td>The verified phone number or name used as the identifier for sending WhatsApp messages.</td>
+		</tr>
+		<tr>
+			<td>WABA ID</td>
+			<td>The unique identifier for the WhatsApp Business Account (WABA) linked to your business.</td>
+		</tr>
+		<tr>
+			<td>API Key</td>
+			<td>A secret key provided by WhatsApp or the service provider to authenticate and authorize API requests for sending messages.</td>
+		</tr>
+	</table>
+	
 </ul>
 
 

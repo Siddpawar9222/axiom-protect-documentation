@@ -6,7 +6,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8">
-<title>Configure SMS Gateway in miniorange IDP</title>
+<title>SMS Gateway Configuration</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - Custom SMS gateway configuration." />
 <meta property="og:title" content="Configure SMS Gateway in miniorange IDP | miniOrange Identity Platform Admin Handbook" />
@@ -903,31 +903,101 @@
         <li>Configure Custom SMS Gateway</li>
       </ul>
       <!-- Breadcrumb Ends -->
-  <h1 id="stepz" class="listas-main guide-title">Configure Custom SMS Gateway</h1><hr>
-    <p>An <b>SMS Gateway</b> is an application that allows your device or server to receive and send Short Message Service (SMS) between various telecommunication networks. These networks can range from local (within a specific area) or international networks. They use a wireless carrier to route text/push messages to mobile devices</p>
-    <p>By default, miniOrange provides and uses it's own SMS Gateway to send OTPs to users. If you have a custom SMS gateway configured, you can use the same to send SMS from your miniOrange account. Check out our list of  <a href="https://plugins.miniorange.com/supported-sms-email-gateways" target="blank"><b>Supported SMS gateways</b></a>.</p><br>
-    <div class="install-help-box">
+  <h1 id="stepz" class="listas-main guide-title">SMS Gateway Configuration</h1><hr>
+    <p>An <b>SMS Gateway</b> is an application that allows your device or server to receive and send Short Message Service (SMS) between various telecommunication networks. These networks can range from local (within a specific area) or international networks. They use a wireless carrier to route text/push messages to mobile devices.</p>
+    <!-- <p>By default, miniOrange provides and uses it's own SMS Gateway to send OTPs to users. If you have a custom SMS gateway configured, you can use the same to send SMS from your miniOrange account. Check out our list of  <a href="https://plugins.miniorange.com/supported-sms-email-gateways" target="blank"><b>Supported SMS gateways</b></a>.</p><br> -->
+    <!-- <div class="install-help-box">
     	<h4>Note: </h4>
     	<p>You can contact <b>idpsupport@xecurify.com</b> for adding your own gateway or if you need help with any SMS Gateway integration.</p>
-    </div><br>
-    
-    <p>Follow the guide to configure SMS gateway in your account</p>
+    </div><br> -->
+   
+	
+	<p> <b>Configure SMS gateway in your account: </b></p>
   
-  <h2 id="stepa" class="listas-main saml_heading_font">Configuration steps for Custom SMS Gateway in miniOrange IDP:</h2>
     <ul class="authen_sub_bullets">
-	    <li>Log in to the <a href="https://login.xecurify.com/" target="blank">miniOrange dashboard</a>.</li>
-	    <li>From the left navigation section, go to <b>Customization &gt;&gt; Custom SMS Provider</b>.</li>
-	    <img class="img_size" src="https://www.miniorange.com/images/sms-gateway/select-custom-sms-provider.webp" alt="2-Factor Authentication app"/><br><br>
+	  <li>Log in to the axiom-protect dashboard.</li>
+      <li>Go to <b>Configuration</b> tab and click on <b>Gateway</b> option. You will see SMS gateway</li>
+      <img class="img_size" src="../../../images/configuration/gateways/configuration.png" alt="Customization tab for Email Gateway" /><br><br>
+	  <li>Click on <b>SMS Gateway Configuation</b></li>
+	  <img class="img_size" src="../../../images/configuration/gateways/sms_primarySMSGateway.png" alt="Customization tab for Email Gateway" /><br><br>
+      <li>Description of Each Field: </li>
+	  <table class="table table-bordered table-striped">
+		<tr>
+			<th>Parameter</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Status</td>
+			<td>Indicates whether the SMS gateway is active or inactive.</td>
+		</tr>
+		<tr>
+			<td>Retry Count with Auto Fail-Over to Secondary Gateway</td>
+			<td>Number of retry attempts to send a message, with automatic failover to a secondary gateway if the primary fails.</td>
+		</tr>
+		<tr>
+			<td>Wait Time Between Retries</td>
+			<td>The time interval between each retry attempt.</td>
+		</tr>
+		<tr>
+			<td>Allow Message Length (less than 160)</td>
+			<td>Specifies that the message length should be less than 160 characters, adhering to SMS limitations.</td>
+		</tr>
+		<tr>
+			<td>Host</td>
+			<td>The server address or hostname of the SMS gateway.</td>
+		</tr>
+		<tr>
+			<td>User ID</td>
+			<td>The user identifier required to authenticate with the SMS gateway.</td>
+		</tr>
+		<tr>
+			<td>Registered Phone</td>
+			<td>The phone number registered with the SMS gateway service.</td>
+		</tr>
+		<tr>
+			<td>Port</td>
+			<td>The port number used to connect to the SMS gateway.</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>The password required to authenticate the user with the SMS gateway.</td>
+		</tr>
+		<tr>
+			<td>Additional Attributes (name1-value1)</td>
+			<td>Custom attributes that can be defined as key-value pairs for the SMS gateway configuration.</td>
+		</tr>
+		<tr>
+			<td>Parameters</td>
+			<td>Additional parameters that may be required by the SMS gateway for specific configurations.</td>
+		</tr>
+		<tr>
+			<td>Setting</td>
+			<td>Specific settings or configurations required for the SMS gateway to operate correctly.</td>
+		</tr>
+		<tr>
+			<td>Implementation Class</td>
+			<td>The class or method used to implement the SMS gateway integration in the application.</td>
+		</tr>
+	</table>
+	
     </ul>
 
-  <h2 id="step1" class="listas-sub saml_heading_font" data-navtext="1. Set Organization SMS Gateway">1. Set Organization SMS Gateway</h2>  
+
+	<ul class="authen_sub_bullets">
+		<!-- <li>Enter email address and Click on the <b>Test Configuration</b> Button to test the SMTP email configuration.</li> -->
+		<li>You can also enter a secondary SMS server information below.</li>
+		<li>After entering the required information, click on <b>Save</b> button to save the configurations.</li>
+		<img class="img_size" src="../../../images/configuration/gateways/sms_secondarySMSGateway.png" alt="Save SMS Configuration"><br><br>
+	  </ul>
+
+  <!-- <h2 id="step1" class="listas-sub saml_heading_font" data-navtext="1. Set Organization SMS Gateway">1. Set Organization SMS Gateway</h2>  
 	  <ul class="authen_sub_bullets">
 	  	<li>Select the <b>Set Organization SMS Gateway</b> icon.</li>
 	  	<img class="img_size" src="https://www.miniorange.com/images/sms-gateway/select-set-organization-sms-gateway.webp" alt="2-Factor Authentication app"/><br><br>
 	  	<li>Under the <b>SMS Gateways</b> section, you can see the following options. Select the gateway of your choice</li>
-	  </ul>	
+	  </ul>	 -->
 
-<section class="tab-style">
+<!-- <section class="tab-style">
 	<section class="tabs tabs-style-underline">
 		<ul class="tab-des">
 			<li id="customgateway" class="tab-us mulidp-dir tabs-default listas-sub " ><a class="tab-link" ><span class="span-idp">Custom Gateway</span></a></li>
@@ -1148,9 +1218,9 @@
 			<li>Click <a href="https://www.twilio.com/console" target="_blank" rel="nofollow">here</a>  to get the <b>ACCOUNT SID</b> and <b>AUTH TOKEN</b>.</li>
     </ul>
   </section>
-</section><br>
+</section><br> -->
 
-<h2 id="step2" class="listas-sub saml_heading_font">2. Test SMS Gateway Configuration</h2>  
+<!-- <h2 id="step2" class="listas-sub saml_heading_font">2. Test SMS Gateway Configuration</h2>  
   <p>After saving the configuration, you can test your SMS Gateway with the following steps.</p>
   <ul class="authen_sub_bullets">
     <li>Enter your mobile number in the <b>STEP 1</b> field.</li>
@@ -1159,7 +1229,7 @@
 	  <img class="img_size" src="https://www.miniorange.com/images/sms-gateway/test-sms-gateway.webp" alt="2-Factor Authentication app" /><br><br>
   </ul>
 
-<p>If you have any further queries. Please contact us at <a href="mailto:idpsupport@xecurify.com"><strong>idpsupport@xecurify.com</strong></a></p>
+<p>If you have any further queries. Please contact us at <a href="mailto:idpsupport@xecurify.com"><strong>idpsupport@xecurify.com</strong></a></p> -->
 
 </div><!-- paddingleft -->
 </div><!-- features -->
