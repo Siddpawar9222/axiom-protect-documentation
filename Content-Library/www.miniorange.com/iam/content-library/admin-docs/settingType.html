@@ -929,43 +929,205 @@
 
 
  <section id="user-source-config">
-  <h3 style="color: black;">User Source Config</h3>
+  <h3 style="color: black;">User Source Config:</h3>
+  <p>
+	User source configuration is the setup used to connect and authenticate users from an external database or directory service. This configuration allows an application to integrate with various user data sources, ensuring that users can log in and their credentials are verified against the specified database or service.
+  </p>
   <hr>
   <ul class="authen_sub_bullets">
       <img loading="lazy" src="../../../images/settings/user-source-config.png" class="img_size" alt="User Source Config">
+	  <br>
+	  <br>
+	  <li>Here is description of each field : </li>
+	  <table class="table table-bordered table-striped">
+		<tr>
+			<th>Field</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Database Type</td>
+			<td>Specifies the type of database being used (e.g., MySQL, PostgreSQL, Oracle).</td>
+		</tr>
+		<tr>
+			<td>Host:Port</td>
+			<td>The address and port number of the database server where user data is stored.</td>
+		</tr>
+		<tr>
+			<td>Source Details</td>
+			<td>Additional information or parameters needed to connect to the database source.</td>
+		</tr>
+		<tr>
+			<td>Authenticated with</td>
+			<td>The method or credentials used to authenticate with the database.</td>
+		</tr>
+		<tr>
+			<td>Database Name</td>
+			<td>The name of the specific database that contains the user data.</td>
+		</tr>
+		<tr>
+			<td>Table Name</td>
+			<td>The name of the table within the database that holds the user information.</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>The password required to authenticate the connection to the database.</td>
+		</tr>
+		<tr>
+			<td>SSL Disabled</td>
+			<td>Indicates whether SSL (Secure Sockets Layer) is disabled for the database connection.</td>
+		</tr>
+	</table>
+	
   </ul>
   <br><br>
 </section>
 
 <section id="radius-server-config">
-  <h3 style="color: black;">Radius Server Config</h3>
+  <h3 style="color: black;">Radius Server Config:</h3>
+  <p>
+	A RADIUS (Remote Authentication Dial-In User Service) server configuration in settings typically includes the details necessary to connect to a RADIUS server for authentication and accounting purposes.
+  </p>
   <hr>
   <ul class="authen_sub_bullets">
       <img loading="lazy" src="../../../images/settings/radius-config.png" class="img_size" alt="Radius Server Config">
+	  <br>
+	  <br>
+	  <li>Here is description of each field : </li>
+	  <table class="table table-bordered table-striped">
+		<tr>
+			<th>Field</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Server: IP</td>
+			<td>The IP address of the RADIUS server where authentication requests are sent.</td>
+		</tr>
+		<tr>
+			<td>Host: Port</td>
+			<td>The port number on which the RADIUS server listens for authentication requests.</td>
+		</tr>
+		<tr>
+			<td>Host: Port</td>
+			<td>The port number on which the RADIUS server listens for accounting requests.</td>
+		</tr>
+		<tr>
+			<td>Accounting </td>
+			<td>process of tracking the consumption of network resources by users.</td>
+		</tr>
+	</table>
+	
   </ul>
   <br><br>
 </section>
 
 <section id="operator-source-config">
   <h3 style="color: black;">Operator Source Config</h3>
+  <p>
+	Operator source configuration is the setup used to connect and authenticate operator from an external database or directory service. This configuration allows an application to integrate with various operator data sources, ensuring that operators can log in and their credentials are verified against the specified database or service.
+  </p>
   <hr>
   <ul class="authen_sub_bullets">
       <img loading="lazy" src="../../../images/settings/operator-source-config.png" class="img_size" alt="Operator Source Config">
+	  <br>
+	  <br>
+	  <li>Here is description of each field : </li>
+	  <table class="table table-bordered table-striped">
+		<tr>
+			<th>Field</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Database Type</td>
+			<td>Specifies the type of database being used (e.g., MySQL, PostgreSQL, Oracle).</td>
+		</tr>
+		<tr>
+			<td>Host:Port</td>
+			<td>The address and port number of the database server where user data is stored.</td>
+		</tr>
+		<tr>
+			<td>Source Details</td>
+			<td>Additional information or parameters needed to connect to the database source.</td>
+		</tr>
+		<tr>
+			<td>Authenticated with</td>
+			<td>The method or credentials used to authenticate with the database. Either Local or AD(Ldap) </td>
+		</tr>
+		<tr>
+			<td>Database Name</td>
+			<td>The name of the specific database that contains the user data.</td>
+		</tr>
+		<tr>
+			<td>Table Name</td>
+			<td>The name of the table within the database that holds the user information.</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>The password required to authenticate the connection to the database.</td>
+		</tr>
+		<tr>
+			<td>SSL Disabled</td>
+			<td>Indicates whether SSL (Secure Sockets Layer) is disabled for the database connection.</td>
+		</tr>
+	</table>
   </ul>
   <br><br>
 </section>
 
 <section id="otp-token-setting">
   <h3 style="color: black;">OTP Token Setting</h3>
+  <p>
+	OTP (One-Time Password) token settings are used to configure the parameters and behavior of OTP authentication in an application. These settings ensure that OTPs are generated, validated, and managed securely.
+  </p>
   <hr>
   <ul class="authen_sub_bullets">
       <img loading="lazy" src="../../../images/settings/otp-token.png" class="img_size" alt="OTP Token Setting">
+	  <br>
+	  <br>
+	  <li>Here is description of each field : </li>
+	  <table class="table table-bordered table-striped">
+		<tr>
+			<th>Field</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>OTP Length</td>
+			<td>Specifies the length of the one-time password. Either 4, 6 or 8 digits.</td>
+		</tr>
+		<tr>
+			<td>Number of Attempts Allowed</td>
+			<td>Defines the number of attempts a user is allowed to enter the OTP. Either SHA1, SHA256 or SHA512.</td>
+		</tr>
+		<tr>
+			<td>Duration</td>
+			<td>Sets the time period for which the OTP is valid.</td>
+		</tr>
+		<tr>
+			<td>Verify OTP with All Apps</td>
+			<td>Indicates whether the OTP should be verified across all applications.</td>
+		</tr>
+		<tr>
+			<td>With OAUTH Algo</td>
+			<td>Specifies the algorithm used for OTP generation and validation.</td>
+		</tr>
+		<tr>
+			<td>Total Number of Validation Steps</td>
+			<td>Defines the number of steps or intervals for which the OTP remains valid.</td>
+		</tr>
+		<tr>
+			<td>Silent Call</td>
+			<td>Allows OTP delivery via a silent call.</td>
+		</tr>
+	</table>
+	
   </ul>
   <br><br>
 </section>
 
 <section id="tokenization-setting">
   <h3 style="color: black;">Tokenization Setting</h3>
+  <p>
+	Tokenization settings refer to the configuration options used in tokenization, a process that replaces sensitive data with unique identification symbols or tokens. These tokens retain essential information without compromising the security of the original data. Tokenization is commonly used in payment processing, data security, and compliance with data protection regulations.
+  </p>
   <hr>
   <ul class="authen_sub_bullets">
       <img loading="lazy" src="../../../images/settings/tokenization-client.png" class="img_size" alt="Tokenization Setting"><br><br>
@@ -975,6 +1137,15 @@
       <img loading="lazy" src="../../../images/settings/tokenization-client-edit.png" class="img_size" alt="Tokenization Setting"><br><br>
       <li>Tokenization-Merchant</li>
       <img loading="lazy" src="../../../images/settings/tokenization-client-tokenization-merchant.png" class="img_size" alt="Tokenization Setting"><br><br>
+      <li>Token Setting : Token Creation</li>
+      <img loading="lazy" src="../../../images/settings/TokenizationSetting_token_creation.png" class="img_size" alt="Tokenization Setting"><br><br>
+      <li>Token Setting : Token Properties</li>
+      <img loading="lazy" src="../../../images/settings/TokenizationSettigsTokenProperty.png" class="img_size" alt="Tokenization Setting"><br><br>
+      <li>Token Setting : Token Security</li>
+      <img loading="lazy" src="../../../images/settings/TokenizationSetting_token_security.png" class="img_size" alt="Tokenization Setting"><br><br>
+      <li>Token Setting : Token Access</li>
+      <img loading="lazy" src="../../../images/settings/TokenizationSetting_token_access.png" class="img_size" alt="Tokenization Setting"><br><br>
+	  
   </ul>
   <br><br>
 </section>
@@ -1041,28 +1212,84 @@
 </section>
 
 <section id="sms-template-setting">
-  <h3 style="color: black;">SMS Template Setting</h3>
+  <h3 style="color: black;">SMS Template Setting :</h3>
+  <p>
+	SMS Template Settings refer to the configuration options for creating and managing templates used for sending SMS messages.
+  </p>
   <hr>
   <ul class="authen_sub_bullets">
+	  <li>Click on <b>SMS Template Setting</b></li>
       <img loading="lazy" src="../../../images/settings/sms-template.png" class="img_size" alt="SMS Template Setting"><br><br>
+	  <li>You will get all avialable SMS template. You can add, Edit templtate.</b></li>
       <li>Add SMS</li>
       <img loading="lazy" src="../../../images/settings/sms-template-add-sms.png" class="img_size" alt="sms-template-add-sms.png"><br><br>
       <li>Edit SMS</li>
       <img loading="lazy" src="../../../images/settings/sms-template-edit.png" class="img_size" alt="sms-template-edit.png"><br><br>  
+	  <li>Here is description of each field : </li>
+	  <table class="table table-bordered table-striped">
+		<tr>
+			<th>Field</th>
+			<th>Description</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>Subject</td>
+			<td>Internal name or description of the template.</td>
+			<td>OTP Notification</td>
+		</tr>
+		<tr>
+			<td>Tagged With</td>
+			<td>Categories or tags for organizing templates.</td>
+			<td>OTP, Marketing, Alerts</td>
+		</tr>
+		<tr>
+			<td>Body</td>
+			<td>Content of the SMS message, including placeholders for dynamic content.</td>
+			<td>Your verification code is {OTP}. It will expire in 10 minutes.</td>
+		</tr>
+	</table>	
   </ul>
   <br><br>
 </section>
 
 <section id="email-template-setting">
-  <h3 style="color: black;">Email Template Setting</h3>
+  <h3 style="color: black;">Email Template Setting : </h3>
+  <p>
+  Email Template Settings refer to the configuration options for creating and managing templates used for sending email messages.
+  </p>
   <hr>
   <ul class="authen_sub_bullets">
+	  <li>Click on <b>Email Template Setting</b></li>
       <img loading="lazy" src="../../../images/settings/email-template-settings.png" class="img_size" alt="Email Template Setting">
       <br><br>
+	  <li>You will get all avialable Email template. You can add, Edit templtate.</b></li>
       <li>Add Email</li>
       <img loading="lazy" src="../../../images/settings/email-template-setting-add.png" class="img_size" alt="email-template-setting-add.png"><br><br>
       <li>Edit Email</li>
       <img loading="lazy" src="../../../images/settings/email-template-settings-edit.png" class="img_size" alt="email-template-settings-edit.png"><br><br>
+	  <li>Here is description of each field : </li>
+	  <table class="table table-bordered table-striped">
+		<tr>
+			<th>Field</th>
+			<th>Description</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>Subject</td>
+			<td>Internal name or description of the template.</td>
+			<td>OTP Notification</td>
+		</tr>
+		<tr>
+			<td>Tagged With</td>
+			<td>Categories or tags for organizing templates.</td>
+			<td>OTP, Marketing, Alerts</td>
+		</tr>
+		<tr>
+			<td>Body</td>
+			<td>Content of the Email message, including placeholders for dynamic content.</td>
+			<td>Your verification code is {OTP}. It will expire in 10 minutes.</td>
+		</tr>
+	</table>
   </ul>
   <br><br>
 </section>
